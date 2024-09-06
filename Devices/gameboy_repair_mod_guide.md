@@ -1,5 +1,5 @@
 
-# GAMEBOY MODDING GUIDE
+# GAMEBOY REPAIR MOD GUIDE
 
 * By: Sumeet Singh @ sumeet-singh.com
 * Created: August 2024
@@ -50,6 +50,11 @@ The tools you will need to fix the gameboy are;
 * Flush cutters: the name of the cuting pliers to cut plastic etc.,
 * Scoring knife: Those safety cutting knives for boxes etc.,
 * Dremel: This is a pen like often portable sandpaper/drilling tool. It can be used to drill and expose traces on PCB's or mould plastic
+
+## REPLACE BATTERY
+
+Gameboy games use either CR1616 or CR2025 cell batteries that need resoldering every time they deplete e.g, after 10+ years.
+When you replace the battery ensure you use a cell holder which is easier to replace the battery in the future without soldering.
 
 ## REPAIR PAD
 
@@ -120,7 +125,7 @@ A video guide is here: https://www.youtube.com/watch?v=zGMKTN90E8A
 A new Gameboy Camera the size of a standard cartridge has been invented see example here: https://www.reddit.com/r/Gameboy/comments/1c4v30w/famicom_game_boy_mini_camera/
 It comes with a unique ROM for the new camera function software, but supports a 2nd ROM so you can dump and load the Gameboy Camera game onto it also
 
-You can order from the author or chosoe to build yourself - https://gameboycamera.super.site/projects/game-boy-mini-camera
+You can order from the author here (default black shell to indicate works on all gameboy models) - https://gameboycamera.super.site/projects/game-boy-mini-camera
 
 To build it yourself will require the below;
 
