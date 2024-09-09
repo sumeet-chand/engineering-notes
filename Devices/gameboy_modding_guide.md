@@ -1,5 +1,5 @@
 
-# GAMEBOY REPAIR MOD GUIDE
+# GAMEBOY MODDING GUIDE
 
 * By: Sumeet Singh @ sumeet-singh.com
 * Created: August 2024
@@ -123,7 +123,10 @@ A video guide is here: https://www.youtube.com/watch?v=zGMKTN90E8A
 ## GAMEBOY MINI CAMERA
 
 A new Gameboy Camera the size of a standard cartridge has been invented see example here: https://www.reddit.com/r/Gameboy/comments/1c4v30w/famicom_game_boy_mini_camera/
-It comes with a unique ROM for the new camera function software, but supports a 2nd ROM so you can dump and load the Gameboy Camera game onto it also
+It comes with a unique ROM for the new camera function software called "Photo!, but supports a 2nd ROM so you can dump and load the "Gameboy Camera" game onto it and have both games.
+Just like the Gameboy camera it uses non volatile RAM to save photos which can last decades so no battery needed to save photos.
+Images can be extracted by connecting any rom dumping hardware e.g, "INSIDEGADGETS GBXCART RW" to your computer, and opening the .sav file with ope source trusted 
+software here: https://github.com/MattGrayYes/GBCameraDump to download the photos.
 
 You can order from the author here (default black shell to indicate works on all gameboy models) - https://gameboycamera.super.site/projects/game-boy-mini-camera
 
@@ -142,6 +145,10 @@ An video here: https://www.youtube.com/watch?v=vA125ypMdJ0
 shows how to use filters to create color images. Possibly something to physically add to the Gameboy camera cartridge
 
 ## GAMEBOY PRINTER
+
+A Gameboy printer is not the only device that can extract/print Gameboy camera photos. Images can be extracted by connecting any rom dumping hardware e.g, "INSIDEGADGETS GBXCART RW"
+to your computer, and opening the .sav file with ope source trusted software here: https://github.com/MattGrayYes/GBCameraDump
+to download the photos.
 
 An exact dimension alternative to the official Gameboy printer paper exists called the: Seiko S-950 (example: https://www.youtube.com/watch?v=8CpA6znIkq0)
 
