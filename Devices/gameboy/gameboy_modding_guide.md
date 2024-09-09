@@ -113,8 +113,9 @@ Nothing lasts forever and having the best screen for sharing the gameboy with ot
 
 ## REPLACE SPEAKERS
 
-Speakers have no polarity. Buy aftermarket from a website such as Aliexpress and solder
-both wires to replace stock broken speakers.
+![GBC Speaker](gbc-speaker-original.png)
+
+Speakers have no polarity which means you can solder any wire to any side. You can buy aftermarket speakers which are usually refurbished from existing phones like Blackberrys like the IPS/OLED screens are, from a website such as Aliexpress and remove existing/replace speakers.
 
 A video guide is here: https://www.youtube.com/watch?v=zGMKTN90E8A
 
@@ -379,10 +380,9 @@ X: Canonically part of the Metroid Series story.
 
 # PROGRAMMING
 
-There are 2 methods to program on gameboy for creating game roms either using GUI software such as "GB Studio" or hardcoding.
+There are 2 methods to program on gameboy for creating game roms either using GUI software such as "GB Studio" https://www.gbstudio.dev/ or programming yourself (hardcoding).
 
-There are 2 languages to program Gameboy games in with mature development frameworks and that can be implemented without too much difficulty
-Assembly (ASM) or C (No C++ as it's difficult for the onboard chip and c++ is too bloated.)
+There are 2 languages to program Gameboy games in with mature development frameworks that can be implemented without too much difficulty Assembly (ASM) or C (No C++ as it's difficult for the onboard chip and c++ is too bloated)
 
 ## PROGRAMING WITH C
 
@@ -394,6 +394,6 @@ Course 2. https://www.youtube.com/watch?v=eYT9s9bvKYU
 
 ## PROGRAMMING WITH ASSEMBLY (ASM)
 
-Honestly for the average person and even programmer it's not worth programming in ASM. For starters the language was used to push the original cartridges
-to the limit, but now with aftermarket and official devices with plenty of memory, and performance upgrades, such as new flashcarts, Gameboy Color, and Advance range
-there's plenty of processing/storage/ram power to utilise without sacificing coding in a higher langauge like C.
+For those looking for a challenge, or simply want to program how the original gameboy games were mad, pushing the limits of the software, see the below courses to program in Assembly.
+
+Course 1 - https://www.youtube.com/watch?v=Tn1rFUutkdo&list=PLp_QNRIYljFrNLNhKgIZQjMM9eaZd166O
