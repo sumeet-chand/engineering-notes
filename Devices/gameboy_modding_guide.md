@@ -33,6 +33,42 @@ Flashing: The process of adding a software/ROM onto a hardware, such as adding a
 
 Gameboy and Color architecture is documented here: https://www.copetti.org/writings/consoles/game-boy/
 
+If you want to learn electronics, especially using a Gameboy as examples this 15 minute video is the most impressive way to learn: https://www.youtube.com/watch?v=QS4fzElm8zk
+You can follow along with the accompnying article here: https://there.oughta.be/a/wifi-game-boy-cartridge
+A follow up showing how to use the above Wifi example to send full feature images, videos or streaming to the gameboy: https://there.oughta.be/gta5-for-the-game-boy
+
+## MULTIPLAYER
+
+The gameboy family use phyical Link cables connected to each other.
+
+There are 4 link cable models;
+4 pin 1 to 1 - for 2 players
+6 pin 1 to 1 - for 2 players
+4 pin 1 to 4 - for up to 4 players
+6 pin 1 to 4 - for up to 4 players
+
+Gameboy/color range use 4 pin physical link cables, while the advance series use 6 pin physical cables, thus connecting
+the old series to the new series is incompatible.
+
+The color series included an Infrared sensor for multiplayer usage in some games such as trading pokemon.
+
+Gameboy advance did introduce wireless adapter which worked wih some games.
+
+Alternatively you can setup an online multiplayer webserver see here to play over the internet: https://www.youtube.com/watch?v=KtHu693wE9o
+
+## GAME SAVING
+
+There are 2 methods of saving games on their own cartridges
+Volatile - On board save requires a battery to provide constant power even when off. If the battery dies the save game is erased
+Non-volatile - Requires no battery and save games are persistently saved in chip even when cartridge is powered off.
+
+The gameboy family has 4 methods of saving games on their own cartridges
+
+1. Flash - non volatile
+2. FRAM - non volatile
+3. EEPROM - non volatile
+4. SRAM - volatile 
+
 # SCHEMATICS
 
 PCB Schematic layers for all consoles are located here: https://www.retrosix.wiki/gbc-board-scans
@@ -113,9 +149,12 @@ Nothing lasts forever and having the best screen for sharing the gameboy with ot
 
 ## REPLACE SPEAKERS
 
-![GBC Speaker](gbc-speaker-original.png)
+Speakers have no polarity which means you can solder any wire to any side. You can buy aftermarket speakers which are usually refurbished from existing phones like Blackberrys 
+like the IPS/OLED screens are, from a website such as Aliexpress and remove existing/replace speakers. 
 
-Speakers have no polarity which means you can solder any wire to any side. You can buy aftermarket speakers which are usually refurbished from existing phones like Blackberrys like the IPS/OLED screens are, from a website such as Aliexpress and remove existing/replace speakers.
+You may want to paint them black and gold to match the original Nintendo stock speakers.
+
+Test the speaker ideally after painting and before soldering by connecting a battery to it on any wire and seeing if there is any noise e.g; https://www.youtube.com/watch?v=pmU-KyxnYVA
 
 A video guide is here: https://www.youtube.com/watch?v=zGMKTN90E8A
 
@@ -233,11 +272,9 @@ Be sure to use diskutil to unmount the drive and not the eject button in the fin
 
 For Empty flashcarts there are a variety of products to buy. This website lists many https://shop.insidegadgets.com/product-category/gameboy-flash-carts/
 
-When buying a flashcart ensure it has the hardware to support the ROM, e.g. a FRAM chip will support saving, or an Cell battery will support RTC so you can add
-ROM hacks of games that require RTC or FRAM on them.
+When buying a flashcart ensure it has the hardware to support the ROM, e.g. a FRAM chip will support saving, or an Cell battery will support RTC so you can add ROM hacks of games that require RTC or FRAM on them.
 
-USB-C or other related access directly to the gameboy cartridge allows programming on the go so you can easily add your own games to it without external hardware required
-for dumping/flashing.
+USB-C or other related access directly to the gameboy cartridge allows programming on the go so you can easily add your own games to it without external hardware required for dumping/flashing.
 
 Rumble feature flashcarts - https://shop.insidegadgets.com/product/gameboy-4mb-32kb-fram-flash-cart-ultra-low-power/
 
@@ -275,8 +312,8 @@ FOR EVERY GAMEBOY FAMILY GAME + OTHERS
 
 In summary
 
-For gameboy/color games only = Everdrive G7
-For all Gameboy family games = EZ Flash Omega Definitive Edition
+For gameboy/color = Everdrive G7 (Because of cheats, superior build quality, support)
+For Gameboy Advance = EZ Flash Omega Definitive Edition (It's a all in one computer)
 
 ### Everdrive G7 SETUP
 
