@@ -1,5 +1,5 @@
 
-# GAMEBOY MODDING GUIDE
+# GAMEBOY SETUP GUIDE
 
 * By: Sumeet Singh @ sumeet-singh.com
 * Created: August 2024
@@ -64,10 +64,25 @@ Non-volatile - Requires no battery and save games are persistently saved in chip
 
 The gameboy family has 4 methods of saving games on their own cartridges
 
-1. Flash - non volatile
-2. FRAM - non volatile
-3. EEPROM - non volatile
-4. SRAM - volatile 
+Flash Memory 
+Type: non-volatile
+Write/Read cycles Limit: 3,000 - 100,000 program/erase (P/E) cycles
+Data Retention: 10 - 20 years
+
+FRAM (Ferroelectric RAM)
+Type: non-volatile
+Write/Read cycles Limit: Exceeds >10 billion writes
+Data Retention: 10 - 15 years
+
+EEPROM (Electrically Erasable Programmable Read-Only Memory)
+Type: non-volatile
+Write/Read cycles Limit: ~1,000,000 writes
+Data Retention: 10 - 20 years
+
+SRAM (Static RAM)
+Type: volatile
+Write/Read cycles Limit: Unlimited
+Data Retention: Data is retained only as long as constant power is supplied
 
 # SCHEMATICS
 
@@ -106,10 +121,6 @@ Watch this video that demonstrates replacing the correct capacitors: https://www
 ## REPLACE SHELL
 
 The modding consencous is to transfer over/replace stickers (serial/warranty) for authenticity.
-
-## TRIM SHELL FOR NEW SCREEN
-
-Watch this video guide: https://www.youtube.com/watch?v=CII21-B6lJ4
 
 ## REPLACE SCREEN
 
@@ -156,7 +167,12 @@ You may want to paint them black and gold to match the original Nintendo stock s
 
 Test the speaker ideally after painting and before soldering by connecting a battery to it on any wire and seeing if there is any noise e.g; https://www.youtube.com/watch?v=pmU-KyxnYVA
 
-A video guide is here: https://www.youtube.com/watch?v=zGMKTN90E8A
+A video guide on replacing the speaker is here: https://www.youtube.com/watch?v=83WY8LNXjV0
+
+## TRIM SHELL
+
+Watch this video guide: https://www.youtube.com/watch?v=CII21-B6lJ4
+
 
 # ACCESSORIES
 
