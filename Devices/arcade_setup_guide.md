@@ -222,7 +222,9 @@ that you can customise however you want.
 
 If you feel this is too much effort you can always buy Arcade1UP arcade machines and use the below modding guide to customise.
 
-NOTE: Arcade joystick cables are called "2.8mm Terminal Quick Connects" arcade cables.
+NOTE: 
+* Arcade joystick cables are called "2.8mm Terminal Quick Connects" arcade cables.
+* Arcade button holes are 30mm diameter. In case you need to buy plugs e.g, "cable grommets" look for the outer diameter matching 30mm not inner diameter!
 
 There are schematics here for many original authentic cabinets you can use to build your own here: https://www.classicarcadecabinets.com/
 
@@ -287,11 +289,11 @@ Note: control panel top does need to be sanded once placed.
 Note: For cutting control panel inputs for coin you can just skip and route cable to coin door, or cut holes on top of control panel alongside 
 player 1 and 2 buttons.
 * For CRT cabinets: __________________________________________________________
-schematics and images are in default password, password protected archive```/xxxxxxxxxxxxxxx```
+schematics and images are in password "password" protected archive```/xxxxxxxxxxxxxxx```
 FEATURES:
      * _____________________________________
      * _____________________________________
-* For Flatscreen cabinets schematics and images are in default password, password protected archive ```/27inch-flatscreen-arcade-machine-plans.rar```
+* For Flatscreen cabinets schematics and images are in password "password" protected archive ```/27inch-flatscreen-arcade-machine-plans.rar```
 FEATURES:
      * 170cm tall
      * Supports Flatscreen tv up to 27"
@@ -307,11 +309,14 @@ For CRT cabinets: you will need to purchasea "HDMI to RCA Converter" or "HDMI to
 7. 3D print the Sinden Lightgun holsters x 2 without the logo version from here https://www.printables.com/model/228065-sinden-lightgun-holster-for-arcade
 8. Add screw on small standard rubber wheels to base for easy transport/moving arcade
 9. Adjust CRT TV/Flatscreen orientation/angle to your liking
-10. Optional - Add diamond tread kickplate to front, and possibly sides
+10. Optional - Add diamond tread kickplate to front, and possibly sides (this is the metal plate to prevent kicking damage to wood)
 11. Add Marquee - print/cut out a marquee for your cabinet e.g, "Joust" then add LED wardrobe lights
 12. Add t-moulding
 13. Add joystick and buttons to encoder
-14. Add relevant countries coin door "dual australian coin door with mechanism" to encoder including coin door lights if desired 
+14. Optional Add double coin door with mechanism with lights. if no lights are available you can buy addon lights e.g, https://www.retroblast.com/articles/coindoor.html additionally you will need to adjust the coin mechanism to accept your desired regions coins e.g, https://www.youtube.com/watch?v=09J4fO1yC8w
+You will need to purchase a 30mm lock for the arcade which are often purchased alongside or just google search "30mm arcade coin door lock" and buy (with the key of course)
+if adding a coin door, then you may want to add a "cable grommet" in place of an existing "coin" button, so you can use for an controller cable to play console
+games e.g, Megadrive/Genesis controller.
 15. Add speakers
 16. Add TV
 17. Cutout TV screen size from black thick paper/cardboard cutout to cover TV sides
