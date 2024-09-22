@@ -226,7 +226,9 @@ NOTE: Arcade joystick cables are called "2.8mm Terminal Quick Connects" arcade c
 
 CABINETS
 
-The steps below can be used to build any generic arcade cabinet but I've included schematics for a CRT and Flatscreen
+There are schematics here for many original authentic cabinets you can use to build your own here: https://www.classicarcadecabinets.com/
+
+The steps below can be used to build any generic arcade cabinet but I've included schematics for a CRT, Flatscreen and racing simulation/cockpit
 cabinet that you are free to print out, cut and use for simplicity sake. When you see steps for CRT/for Flatscreen mentioned
 they are referring to the default designs below;
 
@@ -234,60 +236,7 @@ Remember either option you choose you can swivel the TV to face any angle or ori
 wooden base in cabinet and with flatscreen you can swivel the VEGA bracket. Regardless if you choose a custom orientation it's
 best to pair with a black cardboard/wood cutout and/or acrylic glass to match.
 
-A. CRT cabinet (based on Joust cabinet) up to 24" CRT TV with a <50cm depth and up to 80cm (24") max TV width: https://www.youtube.com/watch?app=desktop&v=BIhmPa00zNs
-
-DESIGN:
-
-      +--------------------------------+
-      |    __   __   _  _  ____  ____  |
-      |  _(  ) /  \ / )( \/ ___)(_  _) |
-      | / \) \(  O )) \/ (\___ \  )(   |
-      | \____/ \__/ \____/(____/ (__)  |
-      +--------------------------------+
-      |                                |
-      |                                |
-      |  +--------------------------+  |
-      |  |                          |  |
-      |  |                          |  |
-      |  |                          |  |
-      |  |                          |  |
-      |  |                          |  |
-      |  |                          |  |
-      |  +--------------------------+  |
-      |                                |
-      |--------------------------------|
-      |     O                O         |
-      |       O O O            O O O   |
-      |     X O O O          X O O O   |
-      |--------------------------------|
-      |            Williams            |
-      |                                |
-      |--------------------------------|
-      |                                |
-      |                                |
-      |                                |
-      |         +------------+         |
-      |         |  |      |  |         |
-      |         |  _      _  |         |
-      |         | |_|    |_| |         |
-      |         +------------+         |
-      |                                |
-      |                                |
-      |                                |
-      |                                |
-      |                                |
-      |                                |
-      |                                |
-      |                                |
-      |                                |
-      +--------------------------------+
-
-B. Flatscreen cabinet up to 27" monitor: https://www.etsy.com/au/listing/1014533426/upright-arcade-machine-design-digital
-
-DESIGN:
-* Flatscreen tv
-* external speakers
-
+EXAMPLE BELOW
 
       +--------------------------------+
       |    __   __   _  _  ____  ____  |
@@ -307,7 +256,7 @@ DESIGN:
       |  +--------------------------+  |
       |                                |
       |--------------------------------|
-      |     O                O         |
+      |     O O              O O       |
       |       O O O            O O O   |
       |     X O O O          X O O O   |
       |--------------------------------|
@@ -333,11 +282,6 @@ DESIGN:
       |                                |
       +--------------------------------+
 
-C. RACING SIMULATION CABINET
-
-DESIGN:
-
-D. There are schematics here for many original authentic cabinets you can use to build your own here: https://www.classicarcadecabinets.com/
 
 ## METHEDOLOGY
 
@@ -345,29 +289,37 @@ D. There are schematics here for many original authentic cabinets you can use to
 Note: control panel top does need to be sanded once placed.
 Note: For cutting control panel inputs for coin you can just skip and route cable to coin door, or cut holes on top of control panel alongside 
 player 1 and 2 buttons.
-* For CRT cabinets: https://retromash.com/2015/01/02/building-a-home-arcade-machine-part-1/
-schematics and images are in folder /CRT-generic
-* For Flatscreen cabinets: https://www.etsy.com/au/listing/1014533426/upright-arcade-machine-design-digital
-schematics and images are in folder /flatscreen-generic
-2. Print vinyl
+* For CRT cabinets: __________________________________________________________
+schematics and images are in folder ```/CRT-arcade-generic```
+FEATURES:
+     * _____________________________________
+     * _____________________________________
+* For Flatscreen cabinets schematics and images are in default password, password protected archive ```/flatscreen-arcade-generic/27inch Arcade machine plans.rar```
+FEATURES:
+     * 170cm tall
+     * Supports Flatscreen tv up to 27"
+3. Print vinyl
 For CRT cabinet: 
 For flatscreen cabinet:
-3. Purchase adapters
+4. Paint cabinet
+For CRT cabinet: 
+For flatscreen cabinet:
+5. Purchase adapters
 For CRT cabinets: you will need to purchasea "HDMI to RCA Converter" or "HDMI to Scart" to plug into PC.
-4. Purchase light guns - buy "Sinden Light gun with recoil 2 packs" which work on any screen https://www.sindenshop.com/
-5. 3D print the Sinden Lightgun holsters x 2 without the logo version from here https://www.printables.com/model/228065-sinden-lightgun-holster-for-arcade
-6. Add wheels
-7. Adjust CRT TV/Flatscreen orientation/angle to your liking
-8. Optional - Add diamond tread kickplate to front, and possibly sides
-9. Add Marquee - print/cut out a marquee for your cabinet e.g, "Joust" then add LED wardrobe lights
-10. Add t-moulding
-11. Add joystick and buttons to encoder
-12. Add relevant countries coin door "dual australian coin door with mechanism" to encoder including coin door lights if desired 
-13. Add speakers
-14. Add TV
-15. Cutout TV screen size from black thick paper/cardboard cutout to cover TV sides
-16. Cut acrylic glass to match black cutout size to cover TV
-17. Setup the computer with emulator following EMULATOR SETUP
+6. Purchase light guns - buy "Sinden Light gun with recoil 2 packs" which work on any screen https://www.sindenshop.com/
+7. 3D print the Sinden Lightgun holsters x 2 without the logo version from here https://www.printables.com/model/228065-sinden-lightgun-holster-for-arcade
+8. Add wheels
+9. Adjust CRT TV/Flatscreen orientation/angle to your liking
+10. Optional - Add diamond tread kickplate to front, and possibly sides
+11. Add Marquee - print/cut out a marquee for your cabinet e.g, "Joust" then add LED wardrobe lights
+12. Add t-moulding
+13. Add joystick and buttons to encoder
+14. Add relevant countries coin door "dual australian coin door with mechanism" to encoder including coin door lights if desired 
+15. Add speakers
+16. Add TV
+17. Cutout TV screen size from black thick paper/cardboard cutout to cover TV sides
+18. Cut acrylic glass to match black cutout size to cover TV
+19. Setup the computer with emulator following EMULATOR SETUP
 
 ### BUILDING SEATED RACING CABINET
 

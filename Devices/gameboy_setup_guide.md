@@ -176,7 +176,15 @@ Watch this video guide: https://www.youtube.com/watch?v=CII21-B6lJ4
 
 # ACCESSORIES
 
-## GAMEBOY MINI CAMERA
+## GAMEBOY CAMERA
+
+### GAMEBOY MINI CAMERA
+
+Remember there are 2 versions of the gameboy camera cartridge game and they have different menus, games and features 
+Japanese version called: Pocket Camera
+English (International) version called: Gameboy Camera
+
+When deciding to implant your exisiting game into a new shell decide which cartridge from above you prefer.
 
 A new Gameboy Camera the size of a standard cartridge has been invented see example here: https://www.reddit.com/r/Gameboy/comments/1c4v30w/famicom_game_boy_mini_camera/
 It comes with a unique ROM for the new camera function software called "Photo!, but supports a 2nd ROM so you can dump and load the "Gameboy Camera" game onto it and have both games.
@@ -200,7 +208,11 @@ Full build guide: https://www.youtube.com/watch?v=DN7vubOzrxo
 An video here: https://www.youtube.com/watch?v=vA125ypMdJ0
 shows how to use filters to create color images. Possibly something to physically add to the Gameboy camera cartridge
 
-## GAMEBOY PRINTER
+### 2BITTOY CAMERA SHELL
+
+A alternative gameboy camera shell with a bigger lens https://2bittoy.carrd.co/
+
+### GAMEBOY PRINTER
 
 A Gameboy printer is not the only device that can extract/print Gameboy camera photos. Images can be extracted by connecting any rom dumping hardware e.g, "INSIDEGADGETS GBXCART RW"
 to your computer, and opening the .sav file with ope source trusted software here: https://github.com/MattGrayYes/GBCameraDump
