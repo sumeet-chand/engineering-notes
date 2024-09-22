@@ -224,8 +224,6 @@ If you feel this is too much effort you can always buy Arcade1UP arcade machines
 
 NOTE: Arcade joystick cables are called "2.8mm Terminal Quick Connects" arcade cables.
 
-CABINETS
-
 There are schematics here for many original authentic cabinets you can use to build your own here: https://www.classicarcadecabinets.com/
 
 The steps below can be used to build any generic arcade cabinet but I've included schematics for a CRT, Flatscreen and racing simulation/cockpit
@@ -282,7 +280,6 @@ EXAMPLE BELOW
       |                                |
       +--------------------------------+
 
-
 ## METHEDOLOGY
 
 1. Cut 18mm wood with t-moulding (t-moulding will overhang on 16mm size cabinets) using schematics below.
@@ -290,11 +287,11 @@ Note: control panel top does need to be sanded once placed.
 Note: For cutting control panel inputs for coin you can just skip and route cable to coin door, or cut holes on top of control panel alongside 
 player 1 and 2 buttons.
 * For CRT cabinets: __________________________________________________________
-schematics and images are in folder ```/CRT-arcade-generic```
+schematics and images are in default password, password protected archive```/xxxxxxxxxxxxxxx```
 FEATURES:
      * _____________________________________
      * _____________________________________
-* For Flatscreen cabinets schematics and images are in default password, password protected archive ```/flatscreen-arcade-generic/27inch Arcade machine plans.rar```
+* For Flatscreen cabinets schematics and images are in default password, password protected archive ```/27inch-flatscreen-arcade-machine-plans.rar```
 FEATURES:
      * 170cm tall
      * Supports Flatscreen tv up to 27"
@@ -308,7 +305,7 @@ For flatscreen cabinet:
 For CRT cabinets: you will need to purchasea "HDMI to RCA Converter" or "HDMI to Scart" to plug into PC.
 6. Purchase light guns - buy "Sinden Light gun with recoil 2 packs" which work on any screen https://www.sindenshop.com/
 7. 3D print the Sinden Lightgun holsters x 2 without the logo version from here https://www.printables.com/model/228065-sinden-lightgun-holster-for-arcade
-8. Add wheels
+8. Add screw on small standard rubber wheels to base for easy transport/moving arcade
 9. Adjust CRT TV/Flatscreen orientation/angle to your liking
 10. Optional - Add diamond tread kickplate to front, and possibly sides
 11. Add Marquee - print/cut out a marquee for your cabinet e.g, "Joust" then add LED wardrobe lights
