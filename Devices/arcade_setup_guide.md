@@ -282,29 +282,67 @@ EXAMPLE BELOW
       |                                |
       +--------------------------------+
 
+## WOOD CUTTING SERVICES LOCATIONS
+
+For Marrickville, Sydney, Australia see: https://lasercuts.com.au/laser-cutting/
+
 ## METHEDOLOGY
 
 1. Cut 18mm wood with t-moulding (t-moulding will overhang on 16mm size cabinets) using schematics below.
 Note: control panel top does need to be sanded once placed.
-Note: For cutting control panel inputs for coin you can just skip and route cable to coin door, or cut holes on top of control panel alongside 
+Note: For cutting control panel inputs for coin you can just skip and route cable to coin door, or cut holes on top of control panel alongside
 player 1 and 2 buttons.
 * For CRT cabinets: __________________________________________________________
-schematics and images are in password "password" protected archive```/xxxxxxxxxxxxxxx```
+schematics and images are in archive```/xxxxxxxxxxxxxxx```
 FEATURES:
      * _____________________________________
      * _____________________________________
-* For Flatscreen cabinets schematics and images are in password "password" protected archive ```/27inch-flatscreen-arcade-machine-plans.rar```
+* For Flatscreen cabinets schematics and images are in archive ```/27inch-flatscreen-arcade-machine-plans.rar```
 FEATURES:
      * 170cm tall
      * Supports Flatscreen tv up to 27"
 3. Print vinyl
-For CRT cabinet: 
-For flatscreen cabinet:
+Common vinyl wraps and artwork for arcades are below
+
+PACMAN: https://arcarc.xmission.com/Web%20Archives/Pac%20Man/Pacman%20Graphics/PACANAC.htm
+
 4. Paint cabinet
-For CRT cabinet: 
-For flatscreen cabinet:
+Common paint codes are below
+
+PACMAN
+
+Option 1: Buy "Krylon sun yellow" spray paint or something similar
+Option B: Codes are below;
+
+#### Pacman color
+This Paint was LOWES American Tradition/Interior Semi Gloss Latex
+
+YELLOW
+BASE:  B 4-40240
+COLOR                    AMOUNT
+103                            .5
+104                          1.5
+113                         20.5
+114                         11Y25.5
+
+RED
+BASE : B 4-44975
+COLOR                    AMOUNT
+109                          1.5
+113                            6
+114                         42.5
+116                         1Y45
+
+BLUE
+BASE : B 4-44975
+COLOR                    AMOUNT
+101                           2.5
+102                         45.5
+103                            17
+113                         1Y29.5
+
 5. Purchase adapters
-For CRT cabinets: you will need to purchasea "HDMI to RCA Converter" or "HDMI to Scart" to plug into PC.
+For CRT cabinets: you will need to purchasea "HDMI to RCA Converter" or "HDMI to Scart" (If your TV supports the superior display quality SCART input on certain old CRT TV models) to plug into Raspberry Pi/PC.
 6. Purchase light guns - buy "Sinden Light gun with recoil 2 packs" which work on any screen https://www.sindenshop.com/
 7. 3D print the Sinden Lightgun holsters x 2 without the logo version from here https://www.printables.com/model/228065-sinden-lightgun-holster-for-arcade
 8. Add screw on small standard rubber wheels to base for easy transport/moving arcade

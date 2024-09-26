@@ -178,41 +178,15 @@ Watch this video guide: https://www.youtube.com/watch?v=CII21-B6lJ4
 
 ## GAMEBOY CAMERA
 
-### GAMEBOY MINI CAMERA
+Gameboy included a camera game cartridge that had a swivelable lens that could take front selfie and back photos. Many aftermarket
+versions exist to transplant the electronics into smaller or larger lens game shells but they forgoe the selfie front camera capability.
 
-Remember there are 2 versions of the gameboy camera cartridge game and they have different menus, games and features 
-Japanese version called: Pocket Camera
-English (International) version called: Gameboy Camera
-
-When deciding to implant your exisiting game into a new shell decide which cartridge from above you prefer.
-
-A new Gameboy Camera the size of a standard cartridge has been invented see example here: https://www.reddit.com/r/Gameboy/comments/1c4v30w/famicom_game_boy_mini_camera/
-It comes with a unique ROM for the new camera function software called "Photo!, but supports a 2nd ROM so you can dump and load the "Gameboy Camera" game onto it and have both games.
-Just like the Gameboy camera it uses non volatile RAM to save photos which can last decades so no battery needed to save photos.
-Images can be extracted by connecting any rom dumping hardware e.g, "INSIDEGADGETS GBXCART RW" to your computer, and opening the .sav file with ope source trusted 
-software here: https://github.com/MattGrayYes/GBCameraDump to download the photos.
-
-You can order from the author here (default black shell to indicate works on all gameboy models) - https://gameboycamera.super.site/projects/game-boy-mini-camera
-
-To build it yourself will require the below;
-
-The 3D model files can be ordered from here - https://ko-fi.com/s/2cdcc23790
-PCB here - https://www.pcbway.com/project/shareproject/Game_Boy_Mini_Camera_25c50b6d.html
-Free label here - https://github.com/supertazon/Game-Boy-Mini-Camera-Famicom-styled-label?tab=readme-ov-file
-Gameboy camera desolder to soldering on new board guide: https://www.youtube.com/watch?v=rYTwGNGz8UI
-
-Full build guide: https://www.youtube.com/watch?v=DN7vubOzrxo
-
-### COLOR IMAGES
+### TAKE COLOR IMAGES WITH TRICHROMATIC PHOTOGRAPHY
 
 An video here: https://www.youtube.com/watch?v=vA125ypMdJ0
 shows how to use filters to create color images. Possibly something to physically add to the Gameboy camera cartridge
 
-### 2BITTOY CAMERA SHELL
-
-A alternative gameboy camera shell with a bigger lens https://2bittoy.carrd.co/
-
-### GAMEBOY PRINTER
+## GAMEBOY PRINTER
 
 A Gameboy printer is not the only device that can extract/print Gameboy camera photos. Images can be extracted by connecting any rom dumping hardware e.g, "INSIDEGADGETS GBXCART RW"
 to your computer, and opening the .sav file with ope source trusted software here: https://github.com/MattGrayYes/GBCameraDump
@@ -245,12 +219,6 @@ This feature allows for the creation of custom cheats beyond the pre-existing co
 If you own the physical game cartridge you can use hardware such as the "InsideGadgets GBxCart RW" to physically connect the cartridge to a computer 
 and start the hardwares software and save a copy of the ROM e.g. "Cool game.gb" to your computer. You can also backup save files and also add save files
 and write new ROM to the cartridge. Allowing you to create your own Gameboy game cartridges.
-
-## ORANGE FM
-
-A cartridge with a built in Radio antenna allowing to listen to FM music from the Gameboy. See here: https://shop.insidegadgets.com/product/orangefm/
-Watch the full video here: https://www.youtube.com/watch?v=-lx9iyLkvwA
-
 
 # ROMS
 
@@ -314,10 +282,10 @@ There are 3 main product ranges of MULTI-CARTS to date that provide full feature
 
 FOR GAMEBOY/COLOR GAMES ONLY
 
-* Everdrive G3 - Plays gb/gbc roms, includes Game Genie codes, High quality, power/battery saving
+* Everdrive G3 - uses SRAM, Plays gb/gbc roms, includes Game Genie codes, High quality, power/battery saving
 * Everdrive G5 - Same as G3, Includes save state
 * Everdrive G7 - Same as G5, Includes RTC
-* EZ Flash jr - same G3, includes RTC, No cheats, requires restart to save, drains power/battery fast, cheap material
+* EZ Flash jr - same G3, uses PSRAM (like SRAM with more Power consumption), includes RTC, No cheats, requires restart to save, drains power/battery fast, cheap material
 
 FOR EVERY GAMEBOY FAMILY GAME + OTHERS
 
@@ -373,7 +341,8 @@ i will ask you to power off, wait a minute and if it doesn't auto restart the so
 
 ### EZ FLASH OMEGA DEFINITIVE EDITION SETUP
 
-TBA
+Once device purchased and roms added to card and flashcart, remember to download the cheats and thumbnails from this link and drag and drop into the
+respective folders in the flashcart - https://www.ezflash.cn/download/
 
 # GAMES TO PLAY
 
