@@ -277,9 +277,9 @@ EXAMPLE BELOW
       |                                |
       |                                |
       |                                |
-      |                                |
-      |                                |
-      |                                |
+      |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|
+      |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|
+      |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|
       +--------------------------------+
 
 ## WOOD CHOICE
