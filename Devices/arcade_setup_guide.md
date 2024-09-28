@@ -224,7 +224,7 @@ If you feel this is too much effort you can always buy Arcade1UP arcade machines
 
 NOTE: 
 * Arcade joystick cables are called "2.8mm Terminal Quick Connects" arcade cables.
-* Arcade button holes are 30mm diameter. In case you need to buy plugs e.g, "cable grommets" look for the outer diameter matching 30mm not inner diameter!
+* Arcade button holes are 28mm diameter, as well as the buttons diameters, and for grommets etc.,
 
 There are schematics here for many original authentic cabinets you can use to build your own here: https://www.classicarcadecabinets.com/
 
@@ -281,6 +281,16 @@ EXAMPLE BELOW
       |                                |
       |                                |
       +--------------------------------+
+
+## WOOD CHOICE
+
+For anywhere remotely outdoor usage or with extreme tempratures, then "Marine Plywood" is the most water, humidity, rotting, cracking and warping resistant material.
+It's made of many layers of waterproof glued together, and due to being made by humans is free from void when glueing and each board is wrapped
+opposite grain the former so it's interlocked and strenghtened.
+
+Timber is strong and heavy and costs more, but is quality material.
+
+MDF is the cheapest and has it's use cases but is prone to weather damage.
 
 ## WOOD CUTTING SERVICES LOCATIONS
 
