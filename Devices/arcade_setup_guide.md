@@ -859,9 +859,7 @@ d. Copy all the folders over. You can also use FileZilla or any FTP software to 
 cp -r /media/usb1/* /home/pi/RetroPie/roms 
 ```
 
-10. OPTIONAL - Read section "LOADING MULTIPLE DISCS | MULTI DISC GAMES | CHANGE DISC" to setup file for multi-disc games if available
-
-11. ADD BIOS
+10. ADD BIOS
 (Necessary for PS1 and all CD based modern retro consoles)
 a. Find the BIOS somewhere e.g. by dumping your own consoles BIOS
 or here if you legally own the console: https://github.com/Abdess/retroarch_system/releases/
@@ -870,17 +868,7 @@ b. Put all files (e.g. for PS1) in ```/home/pi/RetroPie/BIOS``` either with comm
 cp scph5500.bin, scph5501.bin, scph5502.bin /home/pi/RetroPie/BIOS
 ```
 
-12. CONSOLE BOOT SOUND
-a. Edit config to set boot sound for whichever core e.g. ps1 to start
-If the below is not available don't worry, in Retroarch install core for PS1 then do the below
-```bash
-nano /opt/retropie/configs/all/retroarch-core-options.cfg
-pcsx_rearmed_show_bios_bootlogo = "disabled"
-# change to
-pcsx_rearmed_show_bios_bootlogo = "enabled"
-```
-
-13. SETUP - START EMULATION STATION (THE FRONTEND SOFTWARE) OR START GAME ON BOOT
+11. SETUP - START EMULATION STATION (THE FRONTEND SOFTWARE) OR START GAME ON BOOT
 ```bash
 # 1. add code below
 
@@ -898,7 +886,7 @@ emulationstation #auto
 pi@retropie:~ $
 ```
 
-14. INSTALL CORES MANUALLY | MISSING ROMS
+12. INSTALL CORES MANUALLY | MISSING ROMS
 ```bash
 # 1. Follow previous step to mount ROMS USB or migrate the ROMS to the MicroSD card's /home/pi/retropi/roms folder
 # 2. From emulation station select Retropi settings -> retropie settings -> manage packages -> install all installed core packages -> then restart emulation system
@@ -992,8 +980,13 @@ a. set hotkey mouse (toggle) to any button e.g. double quotation mark (").
 in game press that button and mouse will lock to screen.
 
 ### EMULATOR BOOT SOUND e.g, PLAYSTATION STARTUP SOUND
-As long as you have the bios in the /system folder when starting a game it will autodetect
-and play the startup audio/video
+1. put the bios e.g, psx bios into the /home/pi/RetroPie/BIOS directory.
+2. Edit file below and set to enabled
+```bash
+nano /opt/retropie/configs/all/retroarch-core-options.cfg
+pcsx_rearmed_show_bios_bootlogo = "disabled" # find this line
+pcsx_rearmed_show_bios_bootlogo = "enabled" # edit text to say enabled
+```
 
 ### GAMEBOY GAMES CHANGE COLOUR PALETTE
 
