@@ -1058,7 +1058,7 @@ and with the Retroarch Hotkey for AI services pressed. See more here: https://do
 ```
 
 ### ADD SCREEN SAVERS
-1. From emulation station -> start -> UI settings -> screensaver settings -> screen saver behaviour -> either set to Random video OR slideshow -> under slideshow settings set to 2 seconds
+1. From emulation station -> start -> UI settings -> screensaver settings -> screen saver behaviour -> either set to "Random video" OR "slideshow"
 2. From emulation station -> retropie settings -> splashscreens -> download (this will download videos for your ROMS to your SD card so ensure it's at least > 128GBs)
 Slideshow will automatically loop through game art that's scrapped through so follow steps to scrap all images.
 3. You can test with "Select" button to bring up screensavers, and you can start any game displayed by pressing start
