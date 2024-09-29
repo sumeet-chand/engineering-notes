@@ -916,6 +916,13 @@ emulationstation #auto
 pi@retropie:~ $
 ```
 
+14. INSTALL CORES MANUALLY | MISSING ROMS
+```bash
+# 1. Follow previous step to mount ROMS USB or migrate the ROMS to the MicroSD card's /home/pi/retropi/roms folder
+# 2. From emulation station select Retropi settings -> retropie settings -> manage packages -> install all installed core packages -> then restart emulation system
+# 3. Now the games will appear, don't forget to scrap the artwork
+```
+
 # MAME RETROARCH SETUP
 
 1. See section RETROARCH INSTALL STEPS to install Retroarch to manage MAME (Easiest method)
@@ -1067,6 +1074,13 @@ For some games e.g, Playstation 1, which only use d-pad for movement such as Xen
 
 You can use the power of AI to translate foreign while playing a game using an running AI on your computer
 and with the Retroarch Hotkey for AI services pressed. See more here: https://docs.libretro.com/guides/ai-service/
+
+### BLUETOOTH CONNECT CONTROLLER
+```bash
+# 1. Put the controller into pairing mode e.g, for Dualsense press both the Create (Select) button + PS Logo button and hold until light blinks (pairing mode)
+# 2. From emulation station select Retropi settings -> retropie settings -> bluetooth -> search for controller then select
+# 3. Go back to main emulation station menu -> start/menu -> configure input -> setup buttons for new controller
+```
 
 # LAUNCHBOX FRONTEND SETUP
 
