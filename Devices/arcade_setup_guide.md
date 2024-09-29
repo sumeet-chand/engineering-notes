@@ -238,6 +238,9 @@ best to pair with a black cardboard/wood cutout and/or acrylic glass to match.
 
 EXAMPLE BELOW
 
+175cm, 27" flatscreen panel, PACMAN custom cabinet painted 1: sun yellow gloss, 2: black gloss, with diamond kickplate, and the coin buttons
+replaced with 33mm wide (28mm internal diameter) grommet to cut and feed controller cables through also for charging phones.
+
       +--------------------------------+
       |    __   __   _  _  ____  ____  |
       |  _(  ) /  \ / )( \/ ___)(_  _) |
@@ -757,7 +760,7 @@ Install - Plug Micro SD card into Pi then done.
 2. Find the IP address of the Raspberry PI e.g. either from router or arp -a command if on same network 
 ```
 
-OPTIONAL. CHANGING WIFI PASSWORD
+2. OPTIONAL. CHANGING WIFI PASSWORD IF FORGOT TO ADD TO IMAGE ABOVE
 ```bash
 /etc/wpa_supplicant/wpa_supplicant.conf # edit this file
 
@@ -767,13 +770,13 @@ network={
 }
 ```
 
-2. ACCESS PI VIA SSH
+3. ACCESS PI VIA SSH
 ```bash
 ssh pi@IP_GOES_HERE
 password %: raspberry
 ```
 
-3. UPDATE PI
+4. UPDATE PI
 ```bash
 sudo apt update
 sudo apt upgrade -y
@@ -794,54 +797,100 @@ dtparam=pciex1_gen3
 i. sudo reboot now
 ```
 
-7. INSTALL RETROPI
+6. INSTALL RETROPI
 ```bash
-cd
+# 1. Run code below
+cd ~
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 cd RetroPie-Setup
 sudo ./retropie_setup.sh
+
+# 2. At the installation screen select - basic installation - yes/continue
+# 3. Installation will continue. For an estimation it took ~60 minutes on a Raspberry Pi 5 with at least 20MBps Wifi, so older models will take  much longer
+# 4. Reboot device with command ```sudo reboot now```
 ```
 
-8. OPTIONAL - INSTALL FTP AND OPEN PORT 21 FOR FILE TRANSFER
+7. OPTIONAL - INSTALL FTP AND OPEN PORT 21 FOR FILE TRANSFER (ONLY IF NOT SETUP DURING BOOT IMAGE ADDITIONAL STEPS)
 ```bash
 sudo apt install vsftpd
 sudo nano /etc/vsftpd.conf
 Uncomment local_enable=YES # to allow local users to log in.
 Uncomment write_enable=YES # to allow write access to the FTP server.
 netstat -tuln # check if port now open
+sudo systemctl restart vsftpd # then restart service and view port 21 now available for FTP
 pi@retropi:~ $ tcp6       0      0 :::21                   :::*                    LISTEN 
-
-# TO TRANSFER GAMES YOU CAN USE 
-# WINDOWS = FILEZILLA
-# MACOS = ???
 ```
 
-9. TRANSFER GAMES FROM STORAGE MEDIA (e.g, USB) TO DEVICE
+8. OPTIONAL CHANGE ROMS FOLDER AND MOUNT USB
+```bash
+# 1. When a storage drive is connected to a linux computer, it will either appear under. If the below entries are empty the device needs to be mounted first.
 
+ls /mnt
+ls /media
+
+# 2. Run code below to find mounts
+
+pi@retropie:~ $ lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda           8:0    1 233.1G  0 disk
+└─sda1        8:1    1 233.1G  0 part
+mmcblk0     179:0    0  29.2G  0 disk
+├─mmcblk0p1 179:1    0   512M  0 part /boot/firmware
+└─mmcblk0p2 179:2    0  28.7G  0 part /
+
+# 3. We can see under ```/sda/sda1``` there is the unmounted USB storage. To mount first create a directory for it, then mount the unmounted drive to it
+
+sudo mkdir /mnt/romusb
+pi@retropie:~ $ sudo mount /dev/sda1 /mnt/romusb
+pi@retropie:~ $ ls /mnt/romusb
+ ROMS  'System Volume Information'
+
+# 4. Run below code to change the default emulationstation rom search path for each core to the new mounted path in this file ```/etc/emulationstation/es_systems.cfg```
+
+sudo sed -i 's|<path>/home/pi/RetroPie/roms/|<path>/mnt/romusb/ROMS/|g' /etc/emulationstation/es_systems.cfg
+
+# verification below
+pi@retropie:~ $ sudo nano /etc/emulationstation/es_systems.cfg
+
+<?xml version="1.0"?>
+<systemList>
+  <system>
+    <name>amstradcpc</name>
+    <fullname>Amstrad CPC</fullname>
+    <path>/mnt/romusb/ROMS/amstradcpc</path>
+    <extension>.cdt .cpc .cpr .dsk .m3u .tap .zip .CDT .CPC .CPR .DSK .M3U .TAP .ZIP</extension>
+    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ amstradcpc %ROM%</command>
+    <platform>amstradcpc</platform>
+    <theme>amstradcpc</theme>
+  </system>
+```
+
+9. OPTIONAL IF USING SDCARD AS ROM STORAGE - TRANSFER GAMES FROM STORAGE MEDIA (e.g, USB) TO MICROSD
 IMPORTANT: PS2 games come in single .iso (DVD games) or a older 2 files together .bin/.cue (CD-ROM) style
 a. Find the "Rom Folder" names for each emulator you want e.g. for Gameboy
 the emulator Rom Folder name is "gb" from official docs - https://retropie.org.uk/docs/Game-Boy/ 
 b. Make the folders on a USB and fill them with roms that you dumped from your own cartridges
 c. Plug the USB into any USB slot of the raspberry pi and first see which usb folder it's in
 e.g. /media/usb or usb1 - 4
-d. Copy all the folders over
+d. Copy all the folders over. You can also use FileZilla or any FTP software to do the same thing with a GUI interface easily
 ```bash
 cp -r /media/usb1/* /home/pi/RetroPie/roms 
 ```
 
-OPTIONAL - Read section "LOADING MULTIPLE DISCS | MULTI DISC GAMES | CHANGE DISC" to setup file for multi-disc games if available
+10. OPTIONAL - Read section "LOADING MULTIPLE DISCS | MULTI DISC GAMES | CHANGE DISC" to setup file for multi-disc games if available
 
-10. ADD BIOS
-(Necessary for PS1)
+11. ADD BIOS
+(Necessary for PS1 and all CD based modern retro consoles)
 a. Find the BIOS somewhere e.g. by dumping your own consoles BIOS
 or here if you legally own the console: https://github.com/Abdess/retroarch_system/releases/
-b. Put all files (e.g. for PS1) in BIOS
+b. Put all files (e.g. for PS1) in ```/home/pi/RetroPie/BIOS``` either with command below or using a simple GUI software like Filezilla
 ```bash
 cp scph5500.bin, scph5501.bin, scph5502.bin /home/pi/RetroPie/BIOS
 ```
 
-11. CONSOLE BOOT SOUND
+12. CONSOLE BOOT SOUND
 a. Edit config to set boot sound for whichever core e.g. ps1 to start
+If the below is not available don't worry, in Retroarch install core for PS1 then do the below
 ```bash
 nano /opt/retropie/configs/all/retroarch-core-options.cfg
 pcsx_rearmed_show_bios_bootlogo = "disabled"
@@ -849,23 +898,23 @@ pcsx_rearmed_show_bios_bootlogo = "disabled"
 pcsx_rearmed_show_bios_bootlogo = "enabled"
 ```
 
-12. OPTIONAL - START GAME ON BOOT | BOOT INTO GAME | AUTOSTART GAME
+13. SETUP - START EMULATION STATION (THE FRONTEND SOFTWARE) OR START GAME ON BOOT
 ```bash
+# 1. add code below
+
 nano /opt/retropie/configs/all/autostart.sh
 # To start any rom on startup type/replace the core and rom path with the game 
 /opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ mame-libretro ~/RetroPie/roms/mame-libretro/sf2ce.zip &&$
 # emulationstation #auto
-```
-To reverse comment the top and uncomment the bottom.
-```bash
+
+
+# 2. To reverse the above change comment the top and uncomment the bottom.
+
 pi@retropie:~ $ cat /opt/retropie/configs/all/autostart.sh
 # /opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ mame-libretro ~/RetroPie/roms/mame-libretro/sf2ce.zip && emulationstation
 emulationstation #auto
 pi@retropie:~ $
 ```
-
-
-
 
 # MAME RETROARCH SETUP
 
