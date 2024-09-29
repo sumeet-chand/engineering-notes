@@ -1060,9 +1060,15 @@ and with the Retroarch Hotkey for AI services pressed. See more here: https://do
 ### BLUETOOTH CONNECT CONTROLLER
 ```bash
 # 1. Put the controller into pairing mode e.g, for Dualsense press both the Create (Select) button + PS Logo button and hold until light blinks (pairing mode)
-# 2. From emulation station select Retropi settings -> retropie settings -> bluetooth -> search for controller then select
+# 2. From emulation station select Retropi settings -> retropie settings -> bluetooth -> search for controller then select your wireless controller
 # 3. Go back to main emulation station menu -> start/menu -> configure input -> setup buttons for new controller
 ```
+
+### ADD SCREEN SAVERS
+1. From emulation station -> start -> UI settings -> screensaver settings -> screen saver behaviour -> either set to Random video OR slideshow -> under slideshow settings set to 2 seconds
+2. From emulation station -> retropie settings -> splashscreens -> download (this will download videos for your ROMS to your SD card so ensure it's at least > 128GBs)
+Slideshow will automatically loop through game art that's scrapped through so follow steps to scrap all images.
+3. You can test with "Select" button to bring up screensavers, and you can start any game displayed by pressing start
 
 # LAUNCHBOX FRONTEND SETUP
 
