@@ -664,42 +664,12 @@ dmesg | grep usb # to filter for specific things
 ```
 
 MOUNT STORAGE DRIVE | USB
-1. When a storage drive is connected to a linux computer, it will either appear under
 ```bash
+# 1. When a storage drive is connected to a linux computer, it will either appear under. If the below entries are empty the device needs to be mounted first.
 ls /mnt
 ls /media
-```
-2. If the above entries are empty the device needs to be mounted first. You can check what hardware is connected with command
-```bash
-dmesg
 
-[    7.093914] macb 1f00100000.ethernet eth0: configuring for phy/rgmii-id link mode
-[    7.096588] pps pps0: new PPS source ptp0
-[    7.096792] macb 1f00100000.ethernet: gem-ptp-timer ptp clock registered.
-[    7.109983] brcmfmac: brcmf_cfg80211_set_power_mgmt: power save enabled
-[   13.562422] systemd[910]: memfd_create() called without MFD_EXEC or MFD_NOEXEC_SEAL set
-[   36.122311] usb 1-1: USB disconnect, device number 2
-[   36.178324] usb 2-1: USB disconnect, device number 2
-[   39.004029] usb 4-1: USB disconnect, device number 2
-[   45.094199] usb 4-1: new SuperSpeed USB device number 3 using xhci-hcd
-[   45.118445] usb 4-1: New USB device found, idVendor=0781, idProduct=55b1, bcdDevice= 1.10
-[   45.118450] usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
-[   45.118453] usb 4-1: Product: SanDisk 3.2 Gen1
-[   45.118456] usb 4-1: Manufacturer: SanDisk
-[   45.118458] usb 4-1: SerialNumber: A20036512A51F969
-[   45.119495] usb-storage 4-1:1.0: USB Mass Storage device detected
-[   45.120302] scsi host0: usb-storage 4-1:1.0
-[   46.156094] scsi 0:0:0:0: Direct-Access     SanDisk  SanDisk 3.2 Gen1 DL17 PQ: 0 ANSI: 6
-[   46.156331] sd 0:0:0:0: Attached scsi generic sg0 type 0
-[   47.552649] sd 0:0:0:0: [sda] 488914944 512-byte logical blocks: (250 GB/233 GiB)
-[   47.552904] sd 0:0:0:0: [sda] Write Protect is off
-[   47.552909] sd 0:0:0:0: [sda] Mode Sense: 45 00 00 00
-[   47.553120] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
-[   47.555328]  sda: sda1
-[   47.557373] sd 0:0:0:0: [sda] Attached SCSI removable disk
-```
-3. Run code below to find mounts
-```bash
+# 2. Run code below to find mounts
 pi@retropie:~ $ lsblk
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
 sda           8:0    1 233.1G  0 disk
@@ -707,19 +677,30 @@ sda           8:0    1 233.1G  0 disk
 mmcblk0     179:0    0  29.2G  0 disk
 ├─mmcblk0p1 179:1    0   512M  0 part /boot/firmware
 └─mmcblk0p2 179:2    0  28.7G  0 part /
-```
-4. We can see under ```/sda/sda1``` there is the unmounted USB storage.
-To mount first create a directory for it, then mount the unmounted drive to it
-```bash
+
+# 3. We can see under ```/sda/sda1``` there is the unmounted USB storage. To mount first create a directory for it, then mount the unmounted drive to it
 sudo mkdir /mnt/romusb
 pi@retropie:~ $ sudo mount /dev/sda1 /mnt/romusb
 pi@retropie:~ $ ls /mnt/romusb
  ROMS  'System Volume Information'
+
+# 4. To make a mount persistent across reboots first find the storage media id
+pi@retropie:~ $ sudo blkid
+/dev/mmcblk0p1: LABEL_FATBOOT="bootfs" LABEL="bootfs" UUID="91FE-7499" BLOCK_SIZE="512" TYPE="vfat" PARTUUID="4c3c1c9b-01"
+/dev/mmcblk0p2: LABEL="rootfs" UUID="56f80fa2-e005-4cca-86e6-19da1069914d" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="4c3c1c9b-02"
+/dev/sda1: LABEL="SanDisk" UUID="2C5B-D063" BLOCK_SIZE="512" TYPE="exfat" PARTUUID="c3072e18-01"
+
+# 5. Edit the fstab file to input the UUID of the storage edia
+pi@retropie:~ $ sudo nano /etc/fstab
+
+proc            /proc           proc    defaults          0       0
+PARTUUID=4c3c1c9b-01  /boot/firmware  vfat    defaults          0       2
+PARTUUID=4c3c1c9b-02  /               ext4    defaults,noatime  0       1
+# a swapfile is not a swap partition, no line here
+#   use  dphys-swapfile swap[on|off]  for that
+UUID=2C5B-D063 /mnt/romusb exfat defaults,nofail 0 0 # <- here is where we put the UUID of the SanDisk storage media above
+
 ```
-5. Now the drive is available under ```/mnt/romusb```
-
-
-
 
 # SCRIPTS
 

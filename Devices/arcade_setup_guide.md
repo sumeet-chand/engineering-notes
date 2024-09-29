@@ -310,50 +310,16 @@ schematics and images are in archive```/xxxxxxxxxxxxxxx```
 FEATURES:
      * _____________________________________
      * _____________________________________
-* For Flatscreen cabinets schematics and images are in archive ```/27inch-flatscreen-arcade-machine-plans.rar```
+* For Flatscreen cabinets schematics and images are in archive ```/27inch-flatscreen-arcade-machine-plans.rar``` copyright belongs to RetroArcadeSolutions. Not for distribution. Internal demonstration use only.
 FEATURES:
      * 170cm tall
      * Supports Flatscreen tv up to 27"
 3. Print vinyl
 Common vinyl wraps and artwork for arcades are below
-
 PACMAN: https://arcarc.xmission.com/Web%20Archives/Pac%20Man/Pacman%20Graphics/PACANAC.htm
-
 4. Paint cabinet
 Common paint codes are below
-
-PACMAN
-
-Option 1: Buy "Krylon sun yellow" spray paint or something similar
-Option B: Codes are below;
-
-#### Pacman color
-This Paint was LOWES American Tradition/Interior Semi Gloss Latex
-
-YELLOW
-BASE:  B 4-40240
-COLOR                    AMOUNT
-103                            .5
-104                          1.5
-113                         20.5
-114                         11Y25.5
-
-RED
-BASE : B 4-44975
-COLOR                    AMOUNT
-109                          1.5
-113                            6
-114                         42.5
-116                         1Y45
-
-BLUE
-BASE : B 4-44975
-COLOR                    AMOUNT
-101                           2.5
-102                         45.5
-103                            17
-113                         1Y29.5
-
+PACMAN: Buy any "sun yellow" color glossy spray paint
 5. Purchase adapters
 For CRT cabinets: you will need to purchasea "HDMI to RCA Converter" or "HDMI to Scart" (If your TV supports the superior display quality SCART input on certain old CRT TV models) to plug into Raspberry Pi/PC.
 6. Purchase light guns - buy "Sinden Light gun with recoil 2 packs" which work on any screen https://www.sindenshop.com/
@@ -368,7 +334,11 @@ For CRT cabinets: you will need to purchasea "HDMI to RCA Converter" or "HDMI to
 You will need to purchase a 30mm lock for the arcade which are often purchased alongside or just google search "30mm arcade coin door lock" and buy (with the key of course)
 if adding a coin door, then you may want to add a "cable grommet" in place of an existing "coin" button, so you can use for an controller cable to play console
 games e.g, Megadrive/Genesis controller.
-15. Add speakers
+15. Buy 5.25" car speakers (4" is sufficient for smaller cabinets, but 5.25") and any channel amplifier e.g. 
+Amplifier: Kinter MA170 12V 2 Channel Mini Digital Audio Power Amplifier for Car or Mp3
+Speakers: BOSS Audio Systems BRS52 Car Speakers - 60 Watts of Power, 5.25 Inch, Full Range,
+Cut some speaker wire to size and crimp ends with "quick connect/spade terminal ends" and for each speaker put the positive into posiive of left side and negative into negative of left side, and repeat
+for the second speaker for the right side, now you have stereo audio. Connect a 3.5mm headphone male to male from the amplifier to the computer's headphone jack. 
 16. Add TV
 17. Cutout TV screen size from black thick paper/cardboard cutout to cover TV sides
 18. Cut acrylic glass to match black cutout size to cover TV
@@ -824,12 +794,10 @@ pi@retropi:~ $ tcp6       0      0 :::21                   :::*                 
 8. OPTIONAL CHANGE ROMS FOLDER AND MOUNT USB
 ```bash
 # 1. When a storage drive is connected to a linux computer, it will either appear under. If the below entries are empty the device needs to be mounted first.
-
 ls /mnt
 ls /media
 
 # 2. Run code below to find mounts
-
 pi@retropie:~ $ lsblk
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
 sda           8:0    1 233.1G  0 disk
@@ -839,17 +807,31 @@ mmcblk0     179:0    0  29.2G  0 disk
 └─mmcblk0p2 179:2    0  28.7G  0 part /
 
 # 3. We can see under ```/sda/sda1``` there is the unmounted USB storage. To mount first create a directory for it, then mount the unmounted drive to it
-
 sudo mkdir /mnt/romusb
 pi@retropie:~ $ sudo mount /dev/sda1 /mnt/romusb
 pi@retropie:~ $ ls /mnt/romusb
  ROMS  'System Volume Information'
 
-# 4. Run below code to change the default emulationstation rom search path for each core to the new mounted path in this file ```/etc/emulationstation/es_systems.cfg```
+# 4. To make a mount persistent across reboots first find the storage media id
+pi@retropie:~ $ sudo blkid
+/dev/mmcblk0p1: LABEL_FATBOOT="bootfs" LABEL="bootfs" UUID="91FE-7499" BLOCK_SIZE="512" TYPE="vfat" PARTUUID="4c3c1c9b-01"
+/dev/mmcblk0p2: LABEL="rootfs" UUID="56f80fa2-e005-4cca-86e6-19da1069914d" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="4c3c1c9b-02"
+/dev/sda1: LABEL="SanDisk" UUID="2C5B-D063" BLOCK_SIZE="512" TYPE="exfat" PARTUUID="c3072e18-01"
 
+# 5. Edit the fstab file to input the UUID of the storage edia
+pi@retropie:~ $ sudo nano /etc/fstab
+
+proc            /proc           proc    defaults          0       0
+PARTUUID=4c3c1c9b-01  /boot/firmware  vfat    defaults          0       2
+PARTUUID=4c3c1c9b-02  /               ext4    defaults,noatime  0       1
+# a swapfile is not a swap partition, no line here
+#   use  dphys-swapfile swap[on|off]  for that
+UUID=2C5B-D063 /mnt/romusb exfat defaults,nofail 0 0 # <- here is where we put the UUID of the SanDisk storage media above
+
+# 6. Run below code to change the default emulationstation rom search path for each core to the new mounted path in this file ```/etc/emulationstation/es_systems.cfg```
 sudo sed -i 's|<path>/home/pi/RetroPie/roms/|<path>/mnt/romusb/ROMS/|g' /etc/emulationstation/es_systems.cfg
 
-# verification below
+# 7. verification below
 pi@retropie:~ $ sudo nano /etc/emulationstation/es_systems.cfg
 
 <?xml version="1.0"?>
@@ -1105,7 +1087,6 @@ network={
     psk="YourPassword" # Remove your wifi password
 }
 ```
-
 
 # CREDITS
 
