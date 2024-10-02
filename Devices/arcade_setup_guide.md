@@ -330,7 +330,29 @@ For CRT cabinets: you will need to purchasea "HDMI to RCA Converter" or "HDMI to
 11. Add Marquee - print/cut out a marquee for your cabinet e.g, "Joust" then add LED wardrobe lights
 12. Add t-moulding
 13. Add joystick and buttons to encoder
-14. Optional Add double coin door with mechanism with lights. if no lights are available you can buy addon lights e.g, https://www.retroblast.com/articles/coindoor.html additionally you will need to adjust the coin mechanism to accept your desired regions coins e.g, https://www.youtube.com/watch?v=09J4fO1yC8w
+14. Optional Add double coin door with mechanism with lights. 
+* To add coindoor lights buy a "arcade wedge bulb" with a voltage e.g, 5v, 6v or 12v which matches the encoder boards voltage output and buy a matching socket "wedge globe socket" https://www.retroblast.com/articles/coindoor.html 
+
+Remember that over the years various coin door and game manufacturers used two different voltages and two different bases of lamps (actually 3 if you count Centipede cocktail's screw base lamps).
+A 6 volt lamp can be run from 5 volts perfectly fine, but never run them from any higher voltage than 6 volts!
+
+WEDGE BASE
+159 is 6 volts
+259 is 6 volts
+555 is 6 volts
+194 is 12 volts
+161 is 12 volts
+658 is 12 volts
+
+BAYONET BASE
+44 is 6 volts
+47 is 6 volts
+1847 is 6 volts
+1813 is 12 volts
+756 is 12 volts
+
+* How to adjust the coin mechanism to accept your desired regions coins https://www.youtube.com/watch?v=09J4fO1yC8w 
+* How to connect connecting to encoder: https://www.youtube.com/watch?v=KFRnm6Et1zc
 You will need to purchase a 30mm lock for the arcade which are often purchased alongside or just google search "30mm arcade coin door lock" and buy (with the key of course)
 if adding a coin door, then you may want to add a "cable grommet" in place of an existing "coin" button, so you can use for an controller cable to play console
 games e.g, Megadrive/Genesis controller.
