@@ -111,6 +111,14 @@ When you replace the battery ensure you use a cell holder which is easier to rep
 
 Watch this video that demonstrates how to repair damaged pads: https://www.youtube.com/watch?v=SaBwdJLFVPU
 
+## REPAIR CONTACT STRIP PIN
+
+https://www.circuitrework.com/guides/4-6-1.html
+
+or
+
+https://www.circuitrework.com/guides/4-6-2.html
+
 ## REPLACE CAPACITOR
 
 The stock gameboy comes with electrolytic capacitors which for preventitive measures should be replaced every 30 years
@@ -186,6 +194,14 @@ versions exist to transplant the electronics into smaller or larger lens game sh
 An video here: https://www.youtube.com/watch?v=vA125ypMdJ0
 shows how to use filters to create color images. Possibly something to physically add to the Gameboy camera cartridge
 
+### EXTRACT photos
+
+Step 1. Use a gb dump hardware such as: INSIDEGADGETS GBXCART RW
+
+Step 2. Use a website to read the .sav file and extract the image found here: https://www.raphnet.net/programmation/gbcam2png/gbcamtool.html 
+or use free open source windows software to do found here: https://github.com/MattGrayYes/GBCameraDump
+or print it using the Gameboy printer
+
 ## GAMEBOY PRINTER
 
 A Gameboy printer is not the only device that can extract/print Gameboy camera photos. Images can be extracted by connecting any rom dumping hardware e.g, "INSIDEGADGETS GBXCART RW"
@@ -198,6 +214,8 @@ An exact dimension alternative to the official Gameboy printer paper exists call
 
 Pro action replay (PAR) is a game cartridge that has a slot to insert any gameboy or color game to allow inserting cheats into the games RAM. This works by 
 users searching for known cheat codes in a game from the Pro action replay manual to insert before the game starts such as more in game lives, or more difficult enemies.
+
+Modern aftermarket multicart flashcarts often support cheat codes without needing seperate hardware.
 
 ### COMPARISON WITH OTHER CHEAT DEVICES: GAMESHARK OR GAME GENIE
 
@@ -235,11 +253,24 @@ There are 2 methods of getting roms dumping using hardware (see accessories) or 
 
 You can backup ROM saves using the dumping method also.
 
-## TV REMOTE ROM
+## TV REMOTE CONTROL | IR REMOTE
 
 The Gameboy color came with a Infrared Receiver (IR) that was used by a specific game "Mission Impossible" to be able to use the Gameboy color as an TV Remote control.
 Instead of buying or downloading the game instead a modder has created an ROM of the same software so that you can download it to flashcart and use it.
 You can download the ROM from this link: https://bluecop.itch.io/gbc-remote
+
+You need the remote control associated to the TV or a preprogrammed one, as the gbc-remote app copies the existing remote's buttons.
+
+To use;
+
+1. Start game rom "gbc-remote"
+2. use "SELECT" button on gameboy to navigate to a page with a button you want to program e.g, press SELECT until you can see the "POWER" button on gameboy screen
+3. Press "START + SELECT" on the gameboy, the gameboy screen will turn RED 
+4. Then press the POWER button on the gameboy and the gameboy POWER button will turn RED.
+5. Face the gameboys IR port to the remote control IR light
+6. press then POWER button on the remote control. If successfull the power button on the gameboy will immediately change from Red to white indiating the button programmed.
+7. Press the START and SELECT button to exit the LEARNING MODE and the gameboy game screen will go back to white. Now test the power button works on the gameboy remote app
+by facing the TV and pressing it. The TV should switch off. If successfull repeat for all other buttons. You can program many buttons at once without exiting LEARNING MODE for a single page.
 
 # FLASHCARTS
 
@@ -350,39 +381,37 @@ Here is a author picked variety list of ~60 of the most popular, interesting, te
 existing games for the Gameboy and Gamboy Color to collect. You can also find new games being made for Gameboy all the time such as on Itch IO here: https://itch.io/games/tag-gameboy-rom
 Try searching the Internet for "new gameboy games" and try a few out, a author suggestion is new game "The Machine" found here: https://themachinegame.com
 
-NAME | DESCRIPTION
-
-Aliens - Thanatos Encounter                      
-Alleyway: Launch title
-Alone in the Dark: The New Nightmare: Technically impressive use of prerendered images for graphics
-BattleCity: Multiplayer game
-Castlevania (Any game in series): There are 3 games in the series on Gameboy, and 2 remakes in color for Gameboy color, each is historically important in the series
-Catrap
-Commander Keen: The last game in a historically popular western PC game series
-Densha de Go! 2: Largest gameboy game by filesize
-Donkey Kong
-Dragon Warrior III: Technically Impressive NES Port
-Elevator Action EX
-F-1 Race: First gameboy racing game
-Final Fantasy Legend: The first game in the SaGa e.g, "Romancing Saga" JRPG series 
-Final Fantasy Adventure: The first game in the mana e.g, "Secrets of Mana" JRPG series
-Game & Watch Gallery: First international gameboy gallery game knows as "Gameboy Gallery 2" in PAL release
-Ghosts 'N Goblins: Technically impressive port of NES game with
-Heroes of Might and Magic II
-Kirby's Dream Land 2 DX: Colorised hacked modded game
-Kirby's Dream Land DX: Colorised hacked modded game
+Alleyway
+Battle City
+Castlevania - The Adventure DX
+Castlevania II - Belmont's Revenge
+Castlevania Legends
+Cave Noire
+Densha de Go! 2
+Dr. Mario DX
+Dragon Warrior III
+F-1 Race
+Final Fantasy Adventure DX
+Game & Watch Gallery
+Game de Hakken!! Tamagotchi 2
+Gameboy Color Promotional Demo
+gbc-remote
+Ghosts 'N Goblins
+Kaeru no Tame ni Kane wa Naru
+Kirby's Dream Land 2 DX
+Kirby's Dream Land DX
+Kirby's Pinball Land DX
 Legend of the River King
-Lufia The Legend Returns
-Mario Golf: Highest rated Gameboy golf fame
+Mario Golf
 Mario Tennis
-Mega Man World 3 DX: Colorised hacked modded game
-Mega Man World Dr. Wily's Revenge: Colorised hacked modded game
-Mega Man World II: Colorised hacked modded game
+Mega Man World 3 DX
+Mega Man World 5 DX
+Mega Man World Dr. Wily's Revenge
+Mega Man World II
 Metal Gear Solid
 Metroid II - Return of Samus
 Mole Mania
-Nekketsu Kouha Kunio-kun - Bangai Rantou Hen
-Perfect Dark
+Nekketsu Kouha Kunio-kun Bangai Rantou Hen
 Pocket Bomberman
 Pokemon - Blue Version
 Pokemon - Crystal Version
@@ -391,26 +420,26 @@ Pokemon - Yellow Version - Special Pikachu Edition
 Pokemon Pinball
 Pokemon Trading Card Game
 Pop Up
+Prince of Persia
 R-Type DX
-Rampage - World Tour
 Resident Evil Gaiden
-Resident Evil GBC: unreleased prototype port of the same game released on Playstation.
+Resident Evil GBC
 Sakura Wars GB
-Shadowgate Classic: Technically impressive port of PC game
-Shantae: Technically impressive of any Gameboy color game released during Gameboy Color End of life period
-Super Mario Land 2 DX: Colorised hacked modded game
-Super Mario Land DX: Colorised hacked modded game
-Survival Kids: Rare game
-Tetris DX
+Shadowgate Classic
+Star Ocean - Blue Sphere
+Super Mario Land 2 DX
+Super Mario Land DX
+Survival Kids
+Tamagotchi
+Tetris
+The Final Fantasy Legend
 The Legend of Zelda - Link's Awakening DX
 The Legend of Zelda - Oracle of Ages
 The Legend of Zelda - Oracle of Seasons
-Towers - Lord Baniff's Deceit
-Trip World: Rarest PAL game
-V-Rally - Championship Edition
-Wario Land - Super Mario Land 3 DX: Colorised hacked modded game
-Warlocked
-X: Canonically part of the Metroid Series story.
+Trip World
+Wario Land - Super Mario Land 3 DX
+Wario Land II
+X
 
 # PROGRAMMING
 
