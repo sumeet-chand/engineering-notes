@@ -184,6 +184,26 @@ Watch this video guide: https://www.youtube.com/watch?v=CII21-B6lJ4
 
 # ACCESSORIES
 
+## SUPER GAMEBOY
+
+To play games on a TV officially there are only 2 devices that can allow that. 
+
+1. Super Gameboy: released as a cartridge on SNES which has a slot to plug in any gameboy game cartridge. Will play any non color gameboy game
+by inserting the game into the cart and into the SNES and turning on. Allows multiple setting modifications in game and a prized collectors item for
+all Gameboy and Nintendo enthusiests. Will accept flashcarts such as the EZ Flash JR but you will need to press the reset button twice on it when it's
+already inside the Super Gameboy cart plugged into the SNES. Super gameboys are region locked so you cannot for example use a Super Famicom Super Gameboy,
+with a PAL SNES, however for between Japan and US regions may be compatible. Further research required.
+
+2. The Gameboy Player: An attachement to the Gamecube that allows playing any Nintendo Gameboy family games.
+
+## GAMEBOY PLAYER
+
+The gameboy player is the second device other then the Super Gameboy officially released by Nintendo for public consumers to play Gameboy family games
+on their TV. This accessory attachement which plugs into the base of the Gamecube allows playing any Nintendo Gameboy, Gameboy Color and Gameboy advance game cartridge,
+even the rumble and gyroscope games. It requires both the base hardware which is region free but not the required startup disc which is region locked. So you
+can buy and attach any regions Gameboy Player base hardware to any region gamecube, but the startup disc has to match the Gamecube's region. The discs are also
+very expensive to collect as they broke more often then the hardware. 
+
 ## GAMEBOY CAMERA
 
 Gameboy included a camera game cartridge that had a swivelable lens that could take front selfie and back photos. Many aftermarket
@@ -277,6 +297,7 @@ by facing the TV and pressing it. The TV should switch off. If successfull repea
 Flashcarts refer to 2 differnt related things.
 
 1. An empty cartridge for use with adding a custom game ROM in, such as if you develop your own game or want to download a ROM hack into it to play on hardware
+
 2. A Multi-game cartridge that usually has an OS and holds multiple games with usually an external storage such as MicroSD where you load multiple ROMS in it to play on hardware
 
 Why they are used are for adding games you have created, or modified called hacked, into game aftermarket gameboy cartridges for you to play on hardware.
@@ -316,24 +337,20 @@ FOR GAMEBOY/COLOR GAMES ONLY
 * Everdrive G3 - uses SRAM, Plays gb/gbc roms, includes Game Genie codes, High quality, power/battery saving
 * Everdrive G5 - Same as G3, Includes save state
 * Everdrive G7 - Same as G5, Includes RTC
-* EZ Flash jr - same G3, uses PSRAM (like SRAM with more Power consumption), includes RTC, No cheats, requires restart to save, drains power/battery fast, cheap material
+* EZ Flash jr - same G3, uses PSRAM (like SRAM with more Power consumption), includes RTC, No cheats, requires restart to save, allegedly drains power/battery fast,
 
 FOR EVERY GAMEBOY FAMILY GAME + OTHERS
 
-* Everdrive GBA mini
-    Same as G7
-    Supports gba games/nes/sega master system/game gear ROMS, 
-    Inclues Game Genie cheats
-    Power/battery efficient
-    Battery efficient
-* EZ Flash Omega Definitive edition
-    Same as G7
-    Supports gba games/nes/sega master system/game gear ROMS,
-    FRAM saving (Saves on chip for theoretical hundreds of years)
-    Includes Slot2 features (GBA to DS trading/multiplayer)
-    Includes rumble feature
-    Mini computer OS (Web browser, RAM expansion slot, Better UI, Quality of Life features, Game thumbails, supports many file types, can install third party emulators etc., )
-    drains power/battery fast
+1. Everdrive GBA mini
+* Same as G7 but supports gba games/nes/sega master system/game gear ROMS, 
+
+2. EZ Flash Omega Definitive edition
+* Same as G7 but Supports gba games/nes/sega master system/game gear ROMS and many more with installable third party emulators etc., (see GBATemp SimpleDE custom theme for more details)
+* FRAM saving
+* Includes Slot2 features (GBA to DS trading/multiplayer, RAM Expansion, Rumble mode)
+* Advanced computer like UI with ability to read many file types e.g, TXT, BMP, JPG etc., with proper file storage
+* Game thumbails
+* Customisable UI (see GBATemp SimpleDE custom theme for more details)
 
 ### WHICH MULTI-CARTS TO BUY?
 
@@ -358,7 +375,8 @@ the game to the MicroSD card in the /SAVER folder. You can then plug your MicroS
 This also means you can take your saves everywhere with you even if the Flashcart dies.
 * To use on a Super Gameboy plug it in as normal and press the reset button twice, you will see logo change each time
 * Cannot play Gameboy Advance roms if plugged into a Gameboy Advance.
-* If you're using this flashcart on a GBA model note that the GBA will output a smaller then normal screen which isn't ideal. Use a EZ-FLASH OMEGA Definitive Edition.
+* If you're using this flashcart on a GBA model note that the GBA will output a smaller then normal screen which isn't ideal.
+* On use with a Super Gameboy remember to press the reset button twice to get it to work
 * A bonus feature of a flashcart is the MicroSD card can be used as a storage for files. So you can keep text files/documents of your favourite game guides etc.,
 
 #### UPDATE FIRMWARE
@@ -381,65 +399,66 @@ Here is a author picked variety list of ~60 of the most popular, interesting, te
 existing games for the Gameboy and Gamboy Color to collect. You can also find new games being made for Gameboy all the time such as on Itch IO here: https://itch.io/games/tag-gameboy-rom
 Try searching the Internet for "new gameboy games" and try a few out, a author suggestion is new game "The Machine" found here: https://themachinegame.com
 
-Alleyway
-Battle City
-Castlevania - The Adventure DX
-Castlevania II - Belmont's Revenge
-Castlevania Legends
-Cave Noire
-Densha de Go! 2
-Dr. Mario DX
-Dragon Warrior III
-F-1 Race
-Final Fantasy Adventure DX
-Game & Watch Gallery
-Game de Hakken!! Tamagotchi 2
-Gameboy Color Promotional Demo
-gbc-remote
-Ghosts 'N Goblins
-Kaeru no Tame ni Kane wa Naru
-Kirby's Dream Land 2 DX
-Kirby's Dream Land DX
-Kirby's Pinball Land DX
-Legend of the River King
-Mario Golf
-Mario Tennis
-Mega Man World 3 DX
-Mega Man World 5 DX
-Mega Man World Dr. Wily's Revenge
-Mega Man World II
-Metal Gear Solid
-Metroid II - Return of Samus
-Mole Mania
-Nekketsu Kouha Kunio-kun Bangai Rantou Hen
-Pocket Bomberman
-Pokemon - Blue Version
-Pokemon - Crystal Version
-Pokemon - Red Version
-Pokemon - Yellow Version - Special Pikachu Edition
-Pokemon Pinball
-Pokemon Trading Card Game
-Pop Up
-Prince of Persia
-R-Type DX
-Resident Evil Gaiden
-Resident Evil GBC
-Sakura Wars GB
-Shadowgate Classic
-Star Ocean - Blue Sphere
-Super Mario Land 2 DX
-Super Mario Land DX
-Survival Kids
-Tamagotchi
-Tetris
-The Final Fantasy Legend
-The Legend of Zelda - Link's Awakening DX
-The Legend of Zelda - Oracle of Ages
-The Legend of Zelda - Oracle of Seasons
-Trip World
-Wario Land - Super Mario Land 3 DX
-Wario Land II
-X
+* Alleyway
+* Battle City
+* Castlevania Legends
+* Cave Noire
+* Densha de Go! 2
+* Dr. Mario DX
+* Dragon Warrior III
+* F-1 Race
+* Final Fantasy Adventure DX
+* Game & Watch Gallery
+* Game de Hakken!! Tamagotchi 2
+* Gameboy Color Promotional Demo
+* Ghosts 'N Goblins
+* Kaeru no Tame ni Kane wa Naru
+* Kirby's Dream Land 2 DX
+* Kirby's Dream Land DX
+* Kirby's Pinball Land DX
+* Konami GB classics vol 1
+* Konami GB classics vol 2
+* Konami GB classics vol 3
+* Konami GB classics vol 4
+* Legend of the River King
+* Mario Golf
+* Mario Tennis
+* Mega Man World 3 DX
+* Mega Man World 5 DX
+* Mega Man World Dr. Wily's Revenge
+* Mega Man World II
+* Metal Gear Solid
+* Metroid II - Return of Samus
+* Mole Mania
+* Nekketsu Kouha Kunio-kun Bangai Rantou Hen
+* Pocket Bomberman
+* Pokemon - Blue Version
+* Pokemon - Crystal Version
+* Pokemon - Red Version
+* Pokemon - Yellow Version - Special Pikachu Edition
+* Pokemon Pinball
+* Pokemon Trading Card Game
+* Pop Up
+* Prince of Persia
+* R-Type DX
+* Resident Evil Gaiden
+* Resident Evil GBC
+* Sakura Wars GB
+* Shadowgate Classic
+* Star Ocean - Blue Sphere
+* Super Mario Land 2 DX
+* Super Mario Land DX
+* Survival Kids
+* Tamagotchi
+* Tetris
+* The Final Fantasy Legend
+* The Legend of Zelda - Link's Awakening DX
+* The Legend of Zelda - Oracle of Ages
+* The Legend of Zelda - Oracle of Seasons
+* Trip World
+* Wario Land - Super Mario Land 3 DX
+* Wario Land II
+* X
 
 # PROGRAMMING
 
