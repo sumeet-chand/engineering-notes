@@ -186,23 +186,33 @@ Watch this video guide: https://www.youtube.com/watch?v=CII21-B6lJ4
 
 ## SUPER GAMEBOY
 
-To play games on a TV officially there are only 2 devices that can allow that. 
+To play games on a TV officially there are only 3 devices that can allow that. 
 
 1. Super Gameboy: released as a cartridge on SNES which has a slot to plug in any gameboy game cartridge. Will play any non color gameboy game
 by inserting the game into the cart and into the SNES and turning on. Allows multiple setting modifications in game and a prized collectors item for
-all Gameboy and Nintendo enthusiests. Will accept flashcarts such as the EZ Flash JR but you will need to press the reset button twice on it when it's
-already inside the Super Gameboy cart plugged into the SNES. Super gameboys are region locked so you cannot for example use a Super Famicom Super Gameboy,
-with a PAL SNES, however for between Japan and US regions may be compatible. Further research required.
+all Gameboy and Nintendo enthusiests. Will accept flashcarts such as the EZ Flash JR but wont have SGB enhanced features unfortunately. 
+Super gameboys are region locked so you cannot for example use a Super Famicom Super Gameboy, with a PAL SNES, however for between Japan and US 
+regions may be compatible. Further research required.
 
-2. The Gameboy Player: An attachement to the Gamecube that allows playing any Nintendo Gameboy family games.
+2. Super Gameboy 2: The updated Super gameboy only released in Japan therefore region locked to those compatible consoles. Runs games at correct clock speed
+and includes a link cable port to allow playing multiplayer as well as updated new borders.
+
+3. The Gameboy Player: An attachement to the Gamecube that allows playing any Nintendo Gameboy family games.
 
 ## GAMEBOY PLAYER
 
 The gameboy player is the second device other then the Super Gameboy officially released by Nintendo for public consumers to play Gameboy family games
 on their TV. This accessory attachement which plugs into the base of the Gamecube allows playing any Nintendo Gameboy, Gameboy Color and Gameboy advance game cartridge,
-even the rumble and gyroscope games. It requires both the base hardware which is region free but not the required startup disc which is region locked. So you
+even the rumble and gyroscope games. It also plays Gameboy games at the correct clock speed as it actually uses original gameboy advance hardware inside.
+
+How it lacks the SGB enhanced features for Gameboy color games, and lacks abilities to customise borders and have many UI elements. It however does come with it's
+own pack of borders.
+
+It requires both the base hardware which is region free but not the required startup disc which is region locked. So you
 can buy and attach any regions Gameboy Player base hardware to any region gamecube, but the startup disc has to match the Gamecube's region. The discs are also
-very expensive to collect as they broke more often then the hardware. 
+very expensive to collect as they broke more often then the hardware.
+
+Read full review guide here: https://forums.atariage.com/topic/29001-game-boy-player/
 
 ## GAMEBOY CAMERA
 
@@ -330,34 +340,45 @@ If unsure this link describes the differences in Flashcarts you need to add game
 
 ## MULTI-CARTS
 
-There are 3 main product ranges of MULTI-CARTS to date that provide full feature emulation of gameboy family games on real hardware.
+The list of multicarts used for adding multiple roms to play games on real hardware are all below.
 
-FOR GAMEBOY/COLOR GAMES ONLY
+1. Everdrive G3
+* uses SRAM saving
+* Plays gb/gbc roms
+* includes Game Genie codes
+* High quality
+* power/battery saving
+* full SGB compatability
 
-* Everdrive G3 - uses SRAM, Plays gb/gbc roms, includes Game Genie codes, High quality, power/battery saving
-* Everdrive G5 - Same as G3, Includes save state
-* Everdrive G7 - Same as G5, Includes RTC
-* EZ Flash jr - same G3, uses PSRAM (like SRAM with more Power consumption), includes RTC, No cheats, requires restart to save, allegedly drains power/battery fast,
+2. Everdrive G5
+* Same as G3
+* uses FRAM saving
+* Includes save state
 
-FOR EVERY GAMEBOY FAMILY GAME + OTHERS
+3. Everdrive G7 - best flashcart for non GBA models
+* Same as G5
+* Includes RTC
 
-1. Everdrive GBA mini
-* Same as G7 but supports gba games/nes/sega master system/game gear ROMS, 
+4. EZ Flash jr 
+* same G3
+* uses PSRAM - a power hungry consumption non-volatile RAM
+* includes RTC
+* No cheats
+* requires restart and confirmation to save
+* No SGB compatability as of v1.04e. Use this custom kernel at own discretion see: https://gbatemp.net/threads/nitro2k01s-sgb-enabler-for-ez-flash-jr.592961/
 
-2. EZ Flash Omega Definitive edition
-* Same as G7 but Supports gba games/nes/sega master system/game gear ROMS and many more with installable third party emulators etc., (see GBATemp SimpleDE custom theme for more details)
+5. Everdrive GBA mini
+* Same as G7 
+* Supports gba games/nes/sega master system/game gear ROMS
+
+6. EZ Flash Omega Definitive edition - best flashcart for GBA
+* Same as G7
+* Supports gba games/nes/sega master system/game gear ROMS and many more with installable third party emulators etc., (see GBATemp SimpleDE custom theme for more details)
 * FRAM saving
 * Includes Slot2 features (GBA to DS trading/multiplayer, RAM Expansion, Rumble mode)
 * Advanced computer like UI with ability to read many file types e.g, TXT, BMP, JPG etc., with proper file storage
 * Game thumbails
 * Customisable UI (see GBATemp SimpleDE custom theme for more details)
-
-### WHICH MULTI-CARTS TO BUY?
-
-In summary
-
-For gameboy/color = Everdrive G7 (Because of cheats, superior build quality, support)
-For Gameboy Advance = EZ Flash Omega Definitive Edition (It's a all in one computer)
 
 ### Everdrive G7 SETUP
 
@@ -376,10 +397,11 @@ This also means you can take your saves everywhere with you even if the Flashcar
 * To use on a Super Gameboy plug it in as normal and press the reset button twice, you will see logo change each time
 * Cannot play Gameboy Advance roms if plugged into a Gameboy Advance.
 * If you're using this flashcart on a GBA model note that the GBA will output a smaller then normal screen which isn't ideal.
-* On use with a Super Gameboy remember to press the reset button twice to get it to work
+* To use with a Super Gameboy connect it and power the snes on, then press the reset button once until the "Super" logo appears, then press again to get it to boot to menu.
+* No SGB compatability as of v1.04e. Use this custom kernel at own discretion see: https://gbatemp.net/threads/nitro2k01s-sgb-enabler-for-ez-flash-jr.592961/
 * A bonus feature of a flashcart is the MicroSD card can be used as a storage for files. So you can keep text files/documents of your favourite game guides etc.,
 
-#### UPDATE FIRMWARE
+#### EZ FLASH JR UPDATE FIRMWARE
 
 1. To update to latest firmware click visit here and click the Download link under EZ-FLASH junior: https://www.ezflash.cn/download/
 2. copy the 2 files "ezgb.dat" and "Update_FWx.gb" (where "x" is the latest version) to your MicroSD card
@@ -462,11 +484,45 @@ Try searching the Internet for "new gameboy games" and try a few out, a author s
 
 # PROGRAMMING
 
+## CHECKSUMS | CRC-32
+
+Checksums are a means of validating a digital file by examinig all the bytes/data of a file and using a CRC-32 a mathamatical formulae. There are different formulaes to use such as CRC-32, SHA1, or MD5 each with their own pros and cons listed below in order from best top to worse bottom.
+
+SHA-256: Part of the SHA-2 family, it is much more secure and is increasingly recommended for cryptographic security.
+
+SHA-1: More secure than MD5, but still vulnerable to certain attacks; it's also used for checksumming but is being phased out for sensitive applications.
+
+MD5: Originally designed for checksums, it’s now often considered insecure against deliberate alterations but is still 
+used for checksums in many applications due to its speed.
+
+CRC-32: Good for detecting simple errors, fast, but not as secure against intentional tampering.
+
+SUMMARY
+Best for security: SHA-256
+Decent for general use: SHA-1
+Fast but insecure: MD5
+Good for basic error-checking: CRC-32
+
+### CRC-32
+
+CRC-32 is a type of checksum which is a means of validating a digital file by examinig all the bytes/data of a file and using a CRC-32 a mathamatical formulae to come up with a value which defines a file. E.g, a ROM dump of "Tetris" for Gameboy will have a CRC-32 of the below depending on the region of the game;
+
+* Tetris (World) (Rev 1) CRC-32: 46df91ad
+* Tetris (Japan) (En) CRC-32: 63f9407d
+
+So when the original game ROM file is altered/hacked e.g, for adding color to the game, or creating custom borders for Super Gameboy use, the CRC-32 will calculate a different value.
+
+This creates a means of testing the originality of a file, and also track down variations of it.
+
+This website https://emn178.github.io/online-tools/crc32_checksum.html can be used for drag and dropping any digital file such as "Tetris" for Gameboy and finding the CRC-32 value. E.g, 46df91ad . This number coresponds to the ROM I have copied is the original World region version as per above.
+
+## CREATING A GAMEBOY GAME
+
 There are 2 methods to program on gameboy for creating game roms either using GUI software such as "GB Studio" https://www.gbstudio.dev/ or programming yourself (hardcoding).
 
 There are 2 languages to program Gameboy games in with mature development frameworks that can be implemented without too much difficulty Assembly (ASM) or C (No C++ as it's difficult for the onboard chip and c++ is too bloated)
 
-## PROGRAMING WITH C
+### PROGRAMING WITH C
 
 There are several courses to choose from to learn how to program on Gameboy using the C language. Try watching all to learn different methods
 at coding
@@ -474,7 +530,7 @@ at coding
 Course 1. CREATING FIRST HELLO WORLD ROM - https://www.youtube.com/watch?v=HIsWR_jLdwo
 Course 2. https://www.youtube.com/watch?v=eYT9s9bvKYU
 
-## PROGRAMMING WITH ASSEMBLY (ASM)
+### PROGRAMMING WITH ASSEMBLY (ASM)
 
 For those looking for a challenge, or simply want to program how the original gameboy games were mad, pushing the limits of the software, see the below courses to program in Assembly.
 

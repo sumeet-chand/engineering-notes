@@ -1,9 +1,49 @@
 
-___________________________________________________________________________
+# CRYPTOGRAPHY
 
-                            Cryptography
-___________________________________________________________________________
+By: Sumeet Singh @ sumeet-singh.com
 
+Date: October 2024
+
+# TABLE OF CONTENTS
+- [1. Terminologies](#terminologies)
+- [2. Common Commands](#common-commands)
+
+
+# TERMINOLOGIES
+
+Checksums are a means of validating a digital file by examinig all the bytes/data of a file and using a CRC-32 a mathamatical formulae. There are different formulaes to use such as CRC-32, SHA1, or MD5 each with their own pros and cons listed below in order from best top to worse bottom.
+
+SHA-256: Part of the SHA-2 family, it is much more secure and is increasingly recommended for cryptographic security.
+
+SHA-1: More secure than MD5, but still vulnerable to certain attacks; it's also used for checksumming but is being phased out for sensitive applications.
+
+MD5: Originally designed for checksums, it’s now often considered insecure against deliberate alterations but is still 
+used for checksums in many applications due to its speed.
+
+CRC-32: Good for detecting simple errors, fast, but not as secure against intentional tampering.
+
+SUMMARY
+Best for security: SHA-256
+Decent for general use: SHA-1
+Fast but insecure: MD5
+Good for basic error-checking: CRC-32
+
+## CRC-32
+
+CRC-32 is a type of checksum which is a means of validating a digital file by examinig all the bytes/data of a file and using a CRC-32 a mathamatical formulae to come up with a value which defines a file. E.g, a ROM dump of "Tetris" for Gameboy will have a CRC-32 of the below depending on the region of the game;
+
+* Tetris (World) (Rev 1) CRC-32: 46df91ad
+* Tetris (Japan) (En) CRC-32: 63f9407d
+
+So when the original game ROM file is altered/hacked e.g, for adding color to the game, or creating custom borders for Super Gameboy use, the CRC-32 will calculate a different value.
+
+This creates a means of testing the originality of a file, and also track down variations of it.
+
+This website https://emn178.github.io/online-tools/crc32_checksum.html can be used for drag and dropping any digital file such as "Tetris" for Gameboy and finding the CRC-32 value. E.g, 46df91ad . This number coresponds to the ROM I have copied is the original World region version as per above.
+
+
+# COMMON COMMANDS
 
 FIND FILE HASH
 1. Download the zip file
