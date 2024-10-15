@@ -29,6 +29,8 @@ Decent for general use: SHA-1
 Fast but insecure: MD5
 Good for basic error-checking: CRC-32
 
+This website can be used for drag and dropping any digital file to find the checksum: https://emn178.github.io/online-tools/crc32_checksum.html 
+
 ## CRC-32
 
 CRC-32 is a type of checksum which is a means of validating a digital file by examinig all the bytes/data of a file and using a CRC-32 a mathamatical formulae to come up with a value which defines a file. E.g, a ROM dump of "Tetris" for Gameboy will have a CRC-32 of the below depending on the region of the game;
@@ -40,7 +42,7 @@ So when the original game ROM file is altered/hacked e.g, for adding color to th
 
 This creates a means of testing the originality of a file, and also track down variations of it.
 
-This website https://emn178.github.io/online-tools/crc32_checksum.html can be used for drag and dropping any digital file such as "Tetris" for Gameboy and finding the CRC-32 value. E.g, 46df91ad . This number coresponds to the ROM I have copied is the original World region version as per above.
+This website https://emn178.github.io/online-tools/crc32_checksum.html can be used for drag and dropping any digital file such as "Tetris" for Gameboy and finding any checksum such as a CRC-32 value. E.g, "46df91ad". This number coresponds to the ROM the author had copied is the original (World) region version as per above.
 
 
 # COMMON COMMANDS

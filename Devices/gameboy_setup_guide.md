@@ -418,41 +418,40 @@ respective folders in the flashcart - https://www.ezflash.cn/download/
 # GAMES TO PLAY
 
 Here is a author picked variety list of ~60 of the most popular, interesting, technically impressive, historically significant, rarest games and modded/hacked versions of
-existing games for the Gameboy and Gamboy Color to collect. You can also find new games being made for Gameboy all the time such as on Itch IO here: https://itch.io/games/tag-gameboy-rom
-Try searching the Internet for "new gameboy games" and try a few out, a author suggestion is new game "The Machine" found here: https://themachinegame.com
+existing games for the Gameboy and Gamboy Color to collect. You can also find new games being made for Gameboy all the time such as on Itch IO here: https://itch.io/games/tag-gameboy-rom Try searching the Internet for "new gameboy games" and try a few out, a author suggestion is new game "The Machine" found here: https://themachinegame.com
+Note some of the games below are hard to track down but Japanese copies are always cheaper so look online for them.
 
 * Alleyway
 * Battle City
 * Castlevania Legends
 * Cave Noire
 * Densha de Go! 2
-* Dr. Mario DX
+* Dr. Mario
 * Dragon Warrior III
 * F-1 Race
-* Final Fantasy Adventure DX
+* Final Fantasy Adventure
 * Game & Watch Gallery
 * Game de Hakken!! Tamagotchi 2
-* Gameboy Color Promotional Demo
 * Ghosts 'N Goblins
 * Kaeru no Tame ni Kane wa Naru
-* Kirby's Dream Land 2 DX
-* Kirby's Dream Land DX
-* Kirby's Pinball Land DX
-* Konami GB classics vol 1
-* Konami GB classics vol 2
-* Konami GB classics vol 3
-* Konami GB classics vol 4
+* Kirby's Dream Land 2
+* Kirby's Dream Land
+* Kirby's Pinball Land
+* Konami GB Collection Vol.1
+* Konami GB Collection Vol.2
+* Konami GB Collection Vol.3
+* Konami GB Collection Vol.4
 * Legend of the River King
-* Mario Golf
-* Mario Tennis
-* Mega Man World 3 DX
-* Mega Man World 5 DX
-* Mega Man World Dr. Wily's Revenge
-* Mega Man World II
+* Golf
+* Tennis
+* Mega Man 3
+* Mega Man 5
+* Mega Man Dr. Wily's Revenge
+* Mega Man II
 * Metal Gear Solid
 * Metroid II - Return of Samus
 * Mole Mania
-* Nekketsu Kouha Kunio-kun Bangai Rantou Hen
+* Nekketsu Kouha Kunio-kun Bangai Rantou Hen | Double Dragon 2
 * Pocket Bomberman
 * Pokemon - Blue Version
 * Pokemon - Crystal Version
@@ -467,9 +466,8 @@ Try searching the Internet for "new gameboy games" and try a few out, a author s
 * Resident Evil GBC
 * Sakura Wars GB
 * Shadowgate Classic
-* Star Ocean - Blue Sphere
-* Super Mario Land 2 DX
-* Super Mario Land DX
+* Super Mario Land 2
+* Super Mario Land
 * Survival Kids
 * Tamagotchi
 * Tetris
@@ -478,7 +476,7 @@ Try searching the Internet for "new gameboy games" and try a few out, a author s
 * The Legend of Zelda - Oracle of Ages
 * The Legend of Zelda - Oracle of Seasons
 * Trip World
-* Wario Land - Super Mario Land 3 DX
+* Wario Land - Super Mario Land 3
 * Wario Land II
 * X
 
