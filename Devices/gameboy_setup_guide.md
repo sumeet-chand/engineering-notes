@@ -10,14 +10,15 @@ Terms and conditions contract between a product vendor and customer. I recommend
 
 # TABLE OF CONTENTS
 - [1. Terminologies](#terminologies)
-- [2. Architecture](#architecture)
-- [3. Schematics](#schematics)
-- [4. Repairing and Modding](#repairing-and-modding)
-- [5. Accessories](#accessories)
-- [6. Roms](#roms)
-- [7. Flashcarts](#flashcarts)
-- [8. Games to play](#games-to-play)
-- [9. Programming](#programming)
+- [2. Models](#models)
+- [3. Architecture](#architecture)
+- [4. Schematics](#schematics)
+- [5. Repairing and Modding](#repairing-and-modding)
+- [6. Accessories](#accessories)
+- [7. Roms](#roms)
+- [8. Flashcarts](#flashcarts)
+- [9. Games to play](#games-to-play)
+- [10. Programming](#programming)
 
 # TERMINOLOGIES
 
@@ -28,6 +29,11 @@ TFT: A thin LCD display
 OLED: A modern LCD display with pixels turning off in dark images leading to true blacks and power saving.
 Dumping: The process of extracting the software/ROM file such as onto a computer.
 Flashing: The process of adding a software/ROM onto a hardware, such as adding a custom game to a gameboy cartridge
+
+# MODELS
+
+There are several models of gameboy to buy each with release date, games played and pros and cons found here: 
+https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html
 
 # ARCHITECTURES
 
@@ -180,6 +186,8 @@ A video guide on replacing the speaker is here: https://www.youtube.com/watch?v=
 ## TRIM SHELL
 
 Watch this video guide: https://www.youtube.com/watch?v=CII21-B6lJ4
+
+
 
 
 # ACCESSORIES
@@ -370,15 +378,18 @@ The list of multicarts used for adding multiple roms to play games on real hardw
 5. Everdrive GBA mini
 * Same as G7 
 * Supports gba games/nes/sega master system/game gear ROMS
+* Uses an emulator (Goomba/Jagoomba) to play GB games therefore cannot use widescreen, or colorise old GB games as feature tied to authentic hardware firmware on GBC/GBA models however does come with advantages such as using speed/turbo in game etc.,
 
 6. EZ Flash Omega Definitive edition - best flashcart for GBA
 * Same as G7
 * Supports gba games/nes/sega master system/game gear ROMS and many more with installable third party emulators etc., (see GBATemp SimpleDE custom theme for more details)
 * FRAM saving
+* requires restart and confirmation to save
 * Includes Slot2 features (GBA to DS trading/multiplayer, RAM Expansion, Rumble mode)
 * Advanced computer like UI with ability to read many file types e.g, TXT, BMP, JPG etc., with proper file storage
 * Game thumbails
 * Customisable UI (see GBATemp SimpleDE custom theme for more details)
+* Uses an emulator (Goomba/Jagoomba) to play GB games therefore cannot use widescreen, or colorise old GB games as feature tied to authentic hardware firmware on GBC/GBA models however does come with advantages such as using speed/turbo in game etc.,
 
 ### Everdrive G7 SETUP
 
