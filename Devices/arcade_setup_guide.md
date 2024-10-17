@@ -351,6 +351,7 @@ BAYONET BASE
 1813 is 12 volts
 756 is 12 volts
 
+So you will need a e.g, 555 bulb, arcade bulb holder, and a acade button microswitch to connect it together and fit physically onto the coin door and encoder
 * How to adjust the coin mechanism to accept your desired regions coins https://www.youtube.com/watch?v=09J4fO1yC8w 
 * How to connect connecting to encoder: https://www.youtube.com/watch?v=KFRnm6Et1zc
 You will need to purchase a 30mm lock for the arcade which are often purchased alongside or just google search "30mm arcade coin door lock" and buy (with the key of course)
