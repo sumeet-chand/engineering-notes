@@ -35,15 +35,27 @@ The latest version of Open Playstation loader 1.2+ supports exfat attached USB's
 slim models, but possibly there is for earlier models. Note all Playstations have use 1.1 standards and speeds which is significantly theoretically slower
 then the DVD or Internal Harddrive (HDD) or even compared with running games through the Ethernet port connected to a router with a USB running Samba like sharing.
 
+## ADD COVER ART
+
+To add art cover thumbnails for games similar to Retroarch first you need to create a folder named 'Art' along sider your 'DVD' folder on the USB. The images needs to be named as the games catalouge number and put into the Art folder. Example for ICO PAL version the image needs to be named SCES_507.60_COV.jpg. You can download the whole git here and rename the /default folder to "Art" then move to the USB
+https://github.com/xlenore/ps2-covers Then plug the USB back into the PS2 start OPL manager go settings - Display settings - enable art - set to yes - then restart and test
+
+
+
 ## TROUBLESHOOTING
 
 ### USB GAMES NOT APPEARING
 Occurs in exfat USB storage mediums. Put your roms in the USB in either a /CD or /DVD folder then plug into PS2 and start OPL, if the games dont intiially
-appear go to start menu, then quit. Then go back into OPL from main PS2 menu, and see if games appear again, if not go back into OPL settings then go directly
-back again. Some times it takes a few attempts.
+appear under BDM/USB Games, then press the SELECT button to refresh then after press X button then press right to go to another list e.g, HDD Games, then go back 
+to BDM/USB Games to see the list appear. If not then from Start - Quit OPL - start OPL again - repeat the before and restart and try again as a final attempt.
+Follow this video up until the MX4SIO part and just follow the USB part - https://www.youtube.com/watch?app=desktop&v=O8sP1Xm5MfI
 
 ### GAMES WRONG COLOR
 If you play a game from an incorrect region e.g, US or JAP game on a PAL console you will see incorrect colours. This is because the game sends NTSC encoding to a PAL
 TV which is incorrect. To fix either use the correct region game for your console and for international region games use a a region converter for your cable e.g, for Component cables for NTSC/Japanese games in PAL console use a "ntsc to pal converter"
+
+### SHAKY SCREEN
+
+If you find the screen is a bit shaky then most likely you are on PAL 50hz console, which is software outputting at 60hz. Set to the correct Hz e.g, 50hz.
 
 

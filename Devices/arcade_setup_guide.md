@@ -947,6 +947,15 @@ Then scroll to bottom and press start scan.
 
 NOTE: If using Retropie to access Retroarch settings In main menu (core/emulator section) select RetroPie - RetroArch (will open a new menu)
 
+### RUMBLE FEATURE
+
+When playing a game that supports rumble such as a Playstation 1 game and are using an appropriate rumble capable controller
+such as an official Playstation 4 controller then when in a quick menu for a game click on controls - port 1 controls - device type - set to Dualshock
+
+### SWAP DPAD FOR ANALOG STICK FOR OLDER GAMES
+
+For older games you can force the analogue stick to work as the dpad. when in a quick menu for a game click on controls - port 1 controls - analog to digital type - left analog (forced). Now you can enjoy old d-pad only games such as gameboy games using an left analog stick.
+
 ### ADD GAMES
 Settings - Import contents - select the individual folders which have your game roms then click scan directory.
 Games will then automatically be added to Playlists

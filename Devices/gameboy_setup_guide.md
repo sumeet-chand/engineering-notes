@@ -399,6 +399,8 @@ TBA
 
 ### EZ FLASH JR SETUP
 
+* To set sleep mode, enable from settings, then note the key combination below (default: L, R, Select), boot a game with addon then press the former sleep combination
+to set the GBA to sleep and conserve battery. To wake press START + SELECT together
 * To reset back to main menu from game you can press down on the cartridge while running a game and you will feel a click then let go.
 * The battery is not used for saving. It's only used for clock functions in game such as Pokemon Crystal's 24 hour timer. It's not necessary to replace unless
 you play a game that requires 24 hour in game clock
