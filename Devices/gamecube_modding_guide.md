@@ -40,6 +40,13 @@ then connect to serial port 2 underneath your device ensuring it's an original D
 3. Boot into swiss using any exploit method as above, then change to MicroSD folder and play any game
 
 # GAMEBOY INTERFACE SETUP
+
+If you want to play Gameboy games on your display such as a TV with your original saves also, you can plug in your cartridge
+into a Gamecube accessory called a Gameboy player, which outputs the games display to the TV/screen allowing you to also
+use bonus analog controls, change borders, and have other fun features.
+
+However this requires the use of both the hardware and the expensive Gameboy player disc that's region locked.
+
 If you don't have a Gameboy player disc and dont want to purchase due to rarity and cost, you can use Gameboy
 Interface which is a homebrew software run through Swiss that allows mimicing the Gameboy player disc functionality.
 It also adds more functions with allowing upscaling not present in the former disc meaning it's the definitive way
@@ -56,10 +63,15 @@ Full steps are here: https://www.youtube.com/watch?v=6LBdHJ8xpv8&t
 
 1. Plug in any gameboy game into the Gamecube
 2. Click download main package here: https://www.gc-forever.com/wiki/index.php?title=Game_Boy_Interface
-3. Extract the folder, inside the app folder copy the 3 gbi folders into the MicroSD card and connect to the Gamecube e.g, using a Serial port 2 adapter as above
-4. Plug into your gamecube, boot into swiss using exploit steps above, then navigate to the MicroSD card start the relevant .dol executable.
+3. Extract the folder, copy the app folder into the MicroSD card and connect to the Gamecube e.g, using a Serial port 2 adapter as above
+4. Plug into your gamecube, boot into swiss using exploit steps above, then navigate to the MicroSD app folder card start the relevant .dol executable.
 The wiki shows the 3 versions
 standard = best for lcd/oled
 speedrunning = best for crt
 high-fidelity = best for use with upscalers
 5. The game will now start in the best picture quality mode then what the standard Gameboy Player disc coul ever produce.
+
+## ZOOMING + CHANGING DISPLAY OFFSET
+
+Using the Gamecube controller press X then press either L or R to zoom in or out. This way you can fill the entire contents of the display.
+If the game is offset, press the X button and the directional pad in any direction to change the offset then press B or X again to cancel.
