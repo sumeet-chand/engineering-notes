@@ -70,6 +70,15 @@ The answer to which is best is subjective, if you're on windows and developing a
 If you're just targetting Windows only, then stick with Visual Studio as it suits the environment however keep in mind it's not portable.
 
 
+## WINDOWS - INSTALLING WITH CLANG
+
+TBA
+
+## WINDOWS - INSTALLING WITH VISUAL STUDIO
+
+TBA
+
+
 ## WINDOWS - INSTALLING WITH MSYS2
 
 MSYS2 basically installs a small linux OS into c:/msys64 and the subfolders are linux style
@@ -91,6 +100,7 @@ During below installation remember to hit enter (or install from website release
 ```bash
 winget install MSYS2.MSYS2
 ```
+
 2. Run c:/msys64/mingw64 and paste and run the code below
 Note: yasm is for building software and often used in conjunction with make
 The toolchain is the actual C/C++ compiler
@@ -102,7 +112,9 @@ mingw-w64-x86_64-SDL2_ttf mingw-w64-x86_64-libzip mingw-w64-x86_64-zlib \
 mingw-w64-x86_64-boost mingw-w64-x86_64-curl-winssl mingw-w64-x86_64-yasm \
 mingw-w64-x86_64-gtest make git
 ```
+
 3. Within mingw64 shell check the g++ compiler is installed by running the code below and observing a "Hello world" output
+if the output appears you have created your first program "C:\msys64\mingw64\text.exe" 
 ```bash
 echo "#include <stdio.h>" > test.c
 echo 'int main() { printf("Hello, World!\\n"); return 0; }' >> test.c
@@ -111,12 +123,16 @@ gcc -o test test.c
 
 $ Hello World! # expected output
 ```
+
 4. Add environmental variable for g++ location C:\msys64\mingw64\bin (run below as admin in terminal or add manually)
 ```powershell
 [System.Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\msys64\mingw64\bin", [System.EnvironmentVariableTarget]::Machine)
 ```
 
-5. Open a new Terminal shell window on the host (not Mingw64) and run the below command. If successfull you will see the compiler version output.
+5. Test the compiler environmental path variable is available system wide by opening a new Terminal shell window 
+on the host (not Mingw64) and run the below command. If successfull you will see the compiler version output.
+If you see the expected output you are done. You can get started programming by either using an IDE software which is another
+term for a bigger text field software you can type code in like from step 3 earlier, and edit and compile anytime.
 ```bash
 PS C:\Users\Sumeet\Documents\sandbox> g++ --version
 
@@ -125,12 +141,6 @@ Copyright (C) 2024 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
-
-6. Remember if using any DLL's such as from SDL move them from the source filepath C:\msys64\mingw64\bin to your projects directory
-
-## WINDOWS - INSTALLING WITH CLANG
-
-## WINDOWS - INSTALLING WITH VISUAL STUDIO
 
 # PROFILE SCRIPT
 

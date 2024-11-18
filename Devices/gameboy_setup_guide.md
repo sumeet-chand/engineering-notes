@@ -232,13 +232,15 @@ versions exist to transplant the electronics into smaller or larger lens game sh
 An video here: https://www.youtube.com/watch?v=vA125ypMdJ0
 shows how to use filters to create color images. Possibly something to physically add to the Gameboy camera cartridge
 
-### EXTRACT photos
+### EXTRACT PHOTOS
 
-Step 1. Use a gb dump hardware such as: INSIDEGADGETS GBXCART RW
+Besides using a traditional Gameboy printer to physically print the photos, you can instead download digital copied of the photo files
+by following steps below;
 
-Step 2. Use a website to read the .sav file and extract the image found here: https://www.raphnet.net/programmation/gbcam2png/gbcamtool.html 
-or use free open source windows software to do found here: https://github.com/MattGrayYes/GBCameraDump
-or print it using the Gameboy printer
+Step 1. Use a Game ROM backup hardware such as: INSIDEGADGETS GBXCART RW
+Step 2. Connect game to the ROM backup hardware and connect it to a computer
+Step 3. Install and start software "FlashGBX" 
+Step 4. Click to read game's ROM dump. It will give options to save the images to your desktop/drive
 
 ## GAMEBOY PRINTER
 
