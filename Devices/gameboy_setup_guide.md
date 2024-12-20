@@ -427,8 +427,20 @@ i will ask you to power off, wait a minute and if it doesn't auto restart the so
 
 ### EZ FLASH OMEGA DEFINITIVE EDITION SETUP
 
-Once device purchased and roms added to card and flashcart, remember to download the cheats and thumbnails from this link and drag and drop into the
-respective folders in the flashcart - https://www.ezflash.cn/download/
+1. Download the kernel file from here: https://www.ezflash.cn/download/
+2. Format the microSD card to exFAT
+3. Extract above folder and move the ezkernelnew.bin to the root of your microSD Card
+4. Put the microSD card into your EZ Flash Omega Definitive Edition and put inside a Gameboy Advance
+5. It should automatically install the latest firmware and create a SAVER folder
+6. Place the mircoSD card into your computer and delete the ezkernelnew.bin file
+7. Follow the offical thread link here: https://github.com/Sterophonick/omega-de-kernel
+to download the new theme/firmware.
+8. Extract the file above and place both the ezkernelnew-dark.bin (or light theme if you desire) and the SYSTEM folder into the root of your microSD card
+9. Download the cheats and thumbnails from this link and drag and drop into the SYSTEMS folders in the microSD card
+10. Create a folder for GBA, GB, GBC games and copy your ROM dumps into them. Keep in mind their are always more emulators for more game consoles being
+worked on, so check different forums with Google search to find compatible games and create the folder and copy the ROMS as desired.
+10. Place the microSD card back into the EZ Flash Omega DE and while powering on hold the Right bumber key. The new kernel will be found and start to install
+11. Now you can play games. Note the ezkernelnew-dark.bin (or light file) can be safely deleted from the microSD card.
 
 # GAMES TO PLAY
 
