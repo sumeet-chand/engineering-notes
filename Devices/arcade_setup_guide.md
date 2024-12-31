@@ -840,7 +840,7 @@ pi@retropie:~ $ sudo blkid
 /dev/mmcblk0p1: LABEL_FATBOOT="bootfs" LABEL="bootfs" UUID="91FE-7499" BLOCK_SIZE="512" TYPE="vfat" PARTUUID="4c3c1c9b-01"
 /dev/mmcblk0p2: LABEL="rootfs" UUID="56f80fa2-e005-4cca-86e6-19da1069914d" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="4c3c1c9b-02"
 /dev/sda1: LABEL="SanDisk" UUID="2C5B-D063" BLOCK_SIZE="512" TYPE="exfat" PARTUUID="c3072e18-01"
-
+D18B-7F52
 # 5. Edit the fstab file to input the UUID of the storage edia
 pi@retropie:~ $ sudo nano /etc/fstab
 
@@ -946,6 +946,24 @@ Then scroll to bottom and press start scan.
 # RETROARCH CONFIGURATION
 
 NOTE: If using Retropie to access Retroarch settings In main menu (core/emulator section) select RetroPie - RetroArch (will open a new menu)
+
+### RESOLUTION CHANGE
+```bash
+# If os doesn't fit inside the window e.g. a Retropi in an arcade cabinet
+# has the bottom screen e.g. the text CLI prompt part cut off, then
+# adjust the padding/overlay
+# NOTE: it may be moved to /boot/firmware/config.txt
+sudo nano /boot/config.txt
+# uncomment the below and the higher the number the more it moves in so
+overscan_left=5 # padding 5 from left
+overscan_bottom=5 # padding from the bottom
+# if using nano
+# CTRL - X
+# Y
+# PRESS ENTER
+# done. If error, then close file and run with sudo
+sudo reboot now # then view screen, test and adjust accordingly
+```
 
 ### RUMBLE FEATURE
 
@@ -1083,12 +1101,26 @@ You can use the power of AI to translate foreign while playing a game using an r
 and with the Retroarch Hotkey for AI services pressed. See more here: https://docs.libretro.com/guides/ai-service/
 
 ### BLUETOOTH CONNECT CONTROLLER
-```bash
-# 1. Put the controller into pairing mode e.g, for Dualsense press both the Create (Select) button + PS Logo button and hold until light blinks (pairing mode)
-# 2. From emulation station select Retropi settings -> retropie settings -> bluetooth -> search for controller then select your wireless controller
-# 3. Go back to main emulation station menu -> start/menu -> configure input -> setup buttons for new controller
-```
+There are 2 options for setting up a controller depending if you have an existing working keyboard or not
 
+2a. NO ATTACHED KEYBOARDS
+```bash
+a. Get the IP of the device with: ifconfig
+b. PuTTy into device: pi@xxx.xxx.xxx.xxx (using IP from above)
+c. Run command: sudo ~/RetroPie-Setup/retropie_setup.sh 
+```
+2b. WITH KEYBOARD ATTACHED & AT RETROPI  INTERFACE
+a. From emulation station select Retropi settings -> retropie settings
+
+3. Click -> bluetooth -> remove devices - then remove device if it already exists and go back
+
+4. Put the controller into pairing mode e.g, for Dualsense press both the Create (Select) button + PS Logo button and hold until light blinks (pairing mode)
+
+5. Click search for bluetooth devices - while the controller is in pairing mode - select your wireless controller
+
+6. Go back to main emulation station menu -> start/menu -> configure input -> setup buttons for new controller
+
+ 
 ### ADD SCREEN SAVERS
 1. From emulation station -> start -> UI settings -> screensaver settings -> screen saver behaviour -> either set to "Random video" OR "slideshow"
 2. From emulation station -> retropie settings -> splashscreens -> download (this will download videos for your ROMS to your SD card so ensure it's at least > 128GBs)

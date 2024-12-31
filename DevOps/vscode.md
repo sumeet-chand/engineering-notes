@@ -12,6 +12,9 @@ Date: July 2024
 - [4. Profile script](#profile-script)
 - [5. Common Commands](#common-commands)
 - [6. Importing scripts](#importing-scripts)
+- [7. Hotkeys](#hotkeys)
+- [8. Setting up programming languages](#setting-up-programming-languages)
+- [9. Extensions](#extensions)
 
 # TERMINOLOGIES
 
@@ -28,7 +31,40 @@ c_pp_properties: _________________________________
 
 # IMPORTING SCRIPTS
 
-# C++ TASKS.JSON EXAMPLE
+# HOTKEYS
+
+The following Key combinations are shortcuts for VSCode commands.
+
+COLLAPE ALL TEXT: 
+1. CTRL + A 
+2. CTRL + K
+3. CTRL + 0
+
+UNCOLLAPSE ALL TEXT
+1. CTRL + A 
+2. CTRL + K
+3. CTRL + J
+
+SHOW TERMINAL: CTRL + J
+
+SHOW LEFT NAVIGATION BAR: CTRL + B
+
+SHOW SCRIPT PANE (TOP): CTRL + SHIFT + P
+
+
+# SETTING UP PROGRAMMING LANGUAGES
+
+## C++ Setup
+
+First follow this document to install the compiler: \engineering-notes\Programming
+
+Once done you will then create a .cpp file in a folder, run a test code and on running it will
+be asked to select the default compiler which is the one you just installed. VSCode will then
+create a tasks.json file which is the terminal command run to attach/link libs/headers/dll's/assets to build your executable
+and a c_cpp_properties.json file which is just used by VSCode to find where your compiler is, the different build options
+like prod, test; andfinally where are the OS/compilers needed environmental variables.
+
+### SETUP TASKS.JSON EXAMPLE
 
 The code below is for a /.vscode/tasks.json file for all OS for a C++ project
 
@@ -243,7 +279,7 @@ The code below is for a /.vscode/tasks.json file for all OS for a C++ project
 }
 ```
 
-# C+_ C_CPP_PROPERTIES.JSON EXAMPLE
+### SETUP C++ C_CPP_PROPERTIES.JSON EXAMPLE
 
 The code below is for a /.vscode/c_cpp_properties.json file for all OS for a C++ project
 
@@ -298,7 +334,10 @@ The code below is for a /.vscode/c_cpp_properties.json file for all OS for a C++
 }
 ```
 
-# SETUP AWS TOOLKIT
+
+# EXTENSIONS
+
+## SETUP AWS TOOLKIT
 
 To be able to navigate, and modify AWS resources within VSCode file exporer you need to do the below;
 
