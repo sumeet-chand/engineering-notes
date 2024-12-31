@@ -968,14 +968,17 @@ sudo reboot now # then view screen, test and adjust accordingly
 ### RUMBLE FEATURE
 
 When playing a game that supports rumble such as a Playstation 1 game and are using an appropriate rumble capable controller
-such as an official Playstation 4 controller then when in a quick menu for a game click on controls - port 1 controls - device type - set to Dualshock
+such as an official Playstation 4 controller then when in a quick menu for a game click on 
+a. Go to Retroarch Settings - Retroarch - inputs - controls - port 1 controls - device type - set to Dualshock
+b. Go back to Main menu - configuration - save current configuration
+c. Go back and click quit
 
 ### SWAP DPAD FOR ANALOG STICK FOR OLDER GAMES
 
 For older games you can force the analogue stick to work as the dpad. when in a quick menu for a game click on controls - port 1 controls - analog to digital type - left analog (forced). Now you can enjoy old d-pad only games such as gameboy games using an left analog stick.
 
 ### ADD GAMES
-Settings - Import contents - select the individual folders which have your game roms then click scan directory.
+a. Go to Retroarch Settings - Retroarch - Settings - Import contents - select the individual folders which have your game roms then click scan directory.
 Games will then automatically be added to Playlists
 
 ### ADD UNLICENSED AFTERMARKET ROMS
@@ -990,16 +993,18 @@ in retroarch and in menu clicking remove game. However it may still appear in yo
 Settings - Playlist - Manage Playlist - select the playlist - cleanup playlist
 
 ### CHANGE RETROARCH THEME
-Settings - User interface - Menu - choose whatever (ozone is default, rgui is the Playstation like clone)
+a. Go to Retroarch Settings - Retroarch - User interface - Menu - choose whatever (ozone is default, rgui is the Playstation like clone)
+b. Go back to Main menu - configuration - save current configuration
+c. Go back and click quit
 
 ### SWAP A/B BUTTONS
-Settings - Input - Menu Controls
+a. Go to Retroarch Settings - Retroarch - Input - Menu Controls
 b. Set "Menu swap OK/Cancel buttons" to ON. This will change A/B buttons (or X/O on playstation controller)
 c. Go back to Main menu - configuration - save current configuration
-d. Done
+d. Go back and click quit
 
 ### SETUP HOTKEYS (TURBO + SAVE STATES + EMULATOR MENU)
-Settings - Input - Hotkey Binds
+a. Go to Retroarch Settings - Retroarch - ettings - Input - Hotkey Binds
 b. scroll down to Hotkey - set to PS button on Playstation controller 
 (e.g. the PS logo on Dualshock 5)
 c. Select Fast Forward (Toggle) to be R3 (use in game with Press PS button + R3 (Hold down))
