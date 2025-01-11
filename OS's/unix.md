@@ -294,6 +294,15 @@ sudo systemctl start ssh # restart service if off
 sudo systemctl enable ssh # enable service at boot
 ```
 
+RESTART SERVICE | REBOOT SERVICE | KILL SERVICE
+```bash
+1. # Find the services e.g, note the full name is cut off 
+   PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    929 pi        20   0  580.4m 103.3m  60.0m S   5.6   1.3   0:58.05 emulationstatio
+2. pkill emulationstatio # or kill by PID: sudo kill 929
+3. emulationstation # restart service
+```
+
 SYMBOLIC LINKS | SYM LINKS
 
 Symlinks: A symlink is a special type of file that points to another file or directory. When you access the symlink, the system redirects you to the target file or directory. They are useful for creating shortcuts or references to files and directories in different locations without duplicating data. Environment Variables:

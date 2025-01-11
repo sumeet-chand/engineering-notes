@@ -947,7 +947,7 @@ Then scroll to bottom and press start scan.
 
 NOTE: If using Retropie to access Retroarch settings In main menu (core/emulator section) select RetroPie - RetroArch (will open a new menu)
 
-### RESOLUTION CHANGE
+### CHANGE RESOLUTION | OVERSCAN | PADDING
 ```bash
 # If os doesn't fit inside the window e.g. a Retropi in an arcade cabinet
 # has the bottom screen e.g. the text CLI prompt part cut off, then
@@ -1131,6 +1131,16 @@ a. From emulation station select Retropi settings -> retropie settings
 2. From emulation station -> retropie settings -> splashscreens -> download (this will download videos for your ROMS to your SD card so ensure it's at least > 128GBs)
 Slideshow will automatically loop through game art that's scrapped through so follow steps to scrap all images.
 3. You can test with "Select" button to bring up screensavers, and you can start any game displayed by pressing start
+
+### RESTART EMULATIONSTATION | REBOOT EMULATIONSTATION | EMULATIONSTATION SERVICE
+```bash
+# Manually
+1. Find the services e.g,
+   PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    929 pi        20   0  580.4m 103.3m  60.0m S   5.6   1.3   0:58.05 emulationstatio
+2. pkill emulationstatio # or kill by PID: sudo kill 929
+3. emulationstation
+```
 
 # LAUNCHBOX FRONTEND SETUP
 
