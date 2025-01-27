@@ -943,6 +943,9 @@ Default core to: "Arcade (MAME)"
 Then scroll to bottom and press start scan.
 10. Once done and games show in playlist in main menu, select the playlist and select use default core "Arcade (MAME)" now start and test a game
 
+# PS2 RETROARCH SETUP
+On platforms where the core is available (that is, Windows, Linux, and MacOS; it is NOT available for Android or iOS), go to the online updater and scroll down to ‘Update Core Info Files.’ This will ensure that the core shows up properly under the correct name in the menu. Then, head over to the online updater’s ‘Core Downloader’ and scroll down to ‘Sony – Playstation 2 (LRPS)’ to download the actual core. Next, go to the online updater’s ‘Core System Files Downloader’ and get the LRPS2.zip bundle. This bundle will automatically create the ‘pcsx2’ directory in your ‘system’ directory and put the GameIndex.yaml–which includes the various per-game hacks/settings the core and gsDx renderer use for compatibility–inside. It will also create the ‘bios’ directory, inside which you will need to place your PS2 BIOS set. Once that’s done, you’re ready to scan and/or load your games, which can be in a variety of formats, including CHD, but make sure they are not in *.7z, *.rar, *.zip, etc. compressed archives.
+
 # RETROARCH CONFIGURATION
 
 NOTE: If using Retropie to access Retroarch settings In main menu (core/emulator section) select RetroPie - RetroArch (will open a new menu)

@@ -104,3 +104,34 @@ UPLOADING A WINGET
 ```powershell
 
 ```
+
+
+# MICROSOFT 365 AZURE AD
+
+CONNECT TO TENANT
+```powershell
+Install-Module -Name AzureAD -Force
+Set-ExecutionPolicy RemoteSigned
+Import-Module AzureAD
+Connect-AzureAD -Credential (Get-Credential)
+```
+
+FIND USERS GROUPS
+```powershell
+Get-AzureADUser
+```
+
+# MICROSOFT 365 EXCHANGE
+
+CONNECT TO TENANT
+```powershell
+Install-Module -Name ExchangeOnlineManagement -Force
+Set-ExecutionPolicy RemoteSigned
+Import-Module ExchangeOnlineManagement
+Connect-ExchangeOnline -Credential (Get-Credential)
+```
+
+FIND MAILBOX SIZE
+```powershell
+Get-MailboxStatistics -Identity "user@domain.com"
+```
