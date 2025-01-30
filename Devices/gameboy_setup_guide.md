@@ -316,11 +316,12 @@ by facing the TV and pressing it. The TV should switch off. If successfull repea
 
 Flashcarts refer to 2 differnt related things.
 
-1. An empty cartridge for use with adding a custom game ROM in, such as if you develop your own game or want to download a ROM hack into it to play on hardware
+1. An empty cartridge for use with adding a custom game ROM in, such as if you develop your 
+own game or want to download a ROM hack into it to play on hardware
+2. A Multi-game cartridge that usually has an OS and holds multiple games with usually an external 
+storage such as MicroSD where you load multiple ROMS in it to play on hardware
 
-2. A Multi-game cartridge that usually has an OS and holds multiple games with usually an external storage such as MicroSD where you load multiple ROMS in it to play on hardware
-
-Why they are used are for adding games you have created, or modified called hacked, into game aftermarket gameboy cartridges for you to play on hardware.
+You can load your own games (either your official game cart ROM Dumps, or homebrew ROM games) onto these devices to play on physical consoles.
 
 ## SORTING FILES ALPHABETICALLY
 
@@ -431,18 +432,25 @@ i will ask you to power off, wait a minute and if it doesn't auto restart the so
 2. Format the microSD card to exFAT
 3. Extract above folder and move the ezkernelnew.bin to the root of your microSD Card
 4. Put the microSD card into your EZ Flash Omega Definitive Edition and put inside a Gameboy Advance
-5. While booting hold down the R key. It should start installing the latest firmware and create a SAVER folder. You can checking the version from the menu
-matches the downloaded version
-6. Place the mircoSD card into your computer and delete the ezkernelnew.bin file
-7. Follow the offical thread link here: https://github.com/Sterophonick/omega-de-kernel
-to download the new theme/firmware.
-8. Extract the file above and place both the ezkernelnew-dark.bin (or light theme if you desire) and the SYSTEM folder into the root of your microSD card.
-Then rename the -dark or -light file to just ezkernelnew.bin overwriting the existing firmware.
-9. Download the cheats and thumbnails from this link and drag and drop into the SYSTEMS folders in the microSD card
-10. Create a folder for GBA, GB, GBC games and copy your ROM dumps into them. Keep in mind their are always more emulators for more game consoles being
-worked on, so check different forums with Google search to find compatible games and create the folder and copy the ROMS as desired.
-10. Place the microSD card back into the EZ Flash Omega DE and while powering on hold the Right bumber key. The new kernel will be found and start to install
-11. Now you can play games. Note the ezkernelnew-dark.bin (or light file) can be safely deleted from the microSD card.
+5. While booting hold down the R key. It should start installing the latest firmware and create a SAVER folder.
+6. Remove the flashcart and place the mircoSD card back into your computer and delete the ezkernelnew.bin and SAVER files
+7. Follow the offical thread link here to download SimpleDE.zip: https://github.com/Sterophonick/omega-de-kernel
+8. Extract the following files from SimpleDE.zip into the root of your microSD card.
+    * ezkernelnew-dark.bin (or light theme if you desire) and
+    * SYSTEM 
+    * BACKUPfolder
+9. Then rename and remove the suffix "-dark" or "-light" from new kernel file to just ezkernelnew.bin
+10. Download the cheats and thumbnails from this link https://www.ezflash.cn/download/ 
+11. Unzip IMGS.zip and omegacheatlibrary.zip
+12. rename omegacheatlibrary to CHEAT
+13. Drag both IMGS and CHEATS into /SYSTEM folder in the MicroSD card
+14. Insert the MicroSD card into the EZ Flashcart and place into the GBA then flash again by powering device on and holding R
+15. Turn off and now add your ROM folders.
+16. Place card and cart back in and enjoy your games
+
+#### TROUBLESHOOTING EZ FLASH OMEGA DE
+
+All troubleshooting answers are officially found here: https://gbatemp.net/threads/basic-repair-guide-of-current-ez-flash-products.601332/
 
 # GAMES TO PLAY
 
