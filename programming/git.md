@@ -32,8 +32,8 @@ Linux: ```sudo apt install git```
 Note: You will be asked to sign in web browser first time
 
 ```bash
-git config --global user.name "Sumeet Singh"
-git config --global user.email "sumeet.singhji@outlook.com"
+git config --global user.name "Sumeet Chand"
+git config --global user.email "sumeet.chand@outlook.com"
 ```
 
 # PROFILE SCRIPT

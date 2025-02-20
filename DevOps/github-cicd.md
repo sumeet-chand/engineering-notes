@@ -1,5 +1,5 @@
 
-# PROGRAMMING WITH GITHUB
+# GITHUB CICD
 
 By: Sumeet Singh @ sumeet-singh.com
 
@@ -31,6 +31,11 @@ testing before deployment
 See INSTALATION
 
 # INSTALLATION
+
+To use GitHub CI/CD first install Git on your computer. It's an executable which when installed adds all the necessary GUI or Command
+lines to push your code changes to the GitHub cloud servers.
+
+Follow this document to install and setup Git on your device - git.md
 
 Github actions is an CI/CD pipeline to push code to GitHub and trigger any additional commands e.g, to compile, test, push on success, etc.,
 
