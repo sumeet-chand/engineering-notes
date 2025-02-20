@@ -29,12 +29,14 @@ Windows: https://git-scm.com/downloads
 Mac: ```brew install git```
 Linux: ```sudo apt install git```
 
-Note: You will be asked to sign in web browser first time
 
 ```bash
 git config --global user.name "Sumeet Chand"
 git config --global user.email "sumeet.chand@outlook.com"
 ```
+
+
+Note: You will be asked to sign in web browser first time
 
 # PROFILE SCRIPT
 
