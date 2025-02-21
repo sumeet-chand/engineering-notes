@@ -19,8 +19,7 @@ Date: July 2024
 # REQUIREMENTS
 
 The commands below target the Debian family e.g. Debian, Ubuntu, RaspberryPi
-however they can be modified with a quick confirmation with chatGPT to suit
-other OS.
+However the same principal can be applied to many other distros 
 
 
 # INSTALLING
@@ -48,31 +47,45 @@ Why Linux is Used in Business & Home Environments: Like Windows, Linux is widely
 
 1. INSTALLING UBUNTU
 ```bash
-1. Download the **Ubuntu Server** ISO from the official website:
-   - [Ubuntu Server Download](https://ubuntu.com/download/server)
-   - You will be given the option to choose between versions. If you want a version with a **GUI**, you can choose **Ubuntu Server with Desktop Environment (e.g., Ubuntu Desktop)**. If you prefer a more minimal, command-line only setup, go with the standard **Ubuntu Server** version.
+1. Download the **Ubuntu** ISO from the official website:
+   - [Ubuntu Download](https://ubuntu.com/download/desktop) (For the regular desktop version)
+   - [Ubuntu Server Download](https://ubuntu.com/download/server) (For the server version)
+   - **Ubuntu**: This is the regular desktop version, which includes a **Graphical User Interface (GUI)** by default, designed for home or office use. It’s easy to use, with all the tools you need for general-purpose computing like web browsing, gaming, office apps, etc.
+   - **Ubuntu Server**: This version is designed for **server environments**, meaning it doesn’t come with a GUI by default. It’s meant for users who want to set up web servers, database servers, file servers, etc., and prefer to use the command line for managing the system. However, you can install a GUI later if you prefer.
+
 2. Connect a USB drive to the destination computer where you want to install Ubuntu.
-3. Download and install **UNetbootin** from:
-   - [UNetbootin GitHub](https://github.com/unetbootin/unetbootin/releases)
-   Once installed:
-   - Open UNetbootin.
-   - Select the Ubuntu ISO image you downloaded in step 1.
-   - Choose your USB drive as the target.
-   - Click **OK** to begin transferring the ISO to the USB and make it bootable.
-4. Once the process is complete, safely eject the USB and insert it into the computer where you want to install Ubuntu.
-5. Boot the computer into BIOS (usually by pressing a key like **F12**, **ESC**, or **DEL** during startup).
+
+3. Download and install **Rufus** from:
+   - [Rufus Download](https://rufus.ie/)
+
+4. Open **Rufus**:
+   - Select the **USB drive** from the "Device" dropdown.
+   - Under "Boot selection," click **Select** and choose the **Ubuntu ISO** you downloaded in step 1.
+   - Ensure that the **Partition Scheme** is set to **GPT** and the **File System** is **FAT32** (default for most cases).
+   - Click **Start** to begin creating the bootable USB.
+
+5. Once the process is complete, safely eject the USB and insert it into the computer where you want to install Ubuntu.
+
+6. Boot the computer into BIOS (usually by pressing a key like **F12**, **ESC**, or **DEL** during startup).
    - In BIOS, select the boot options and choose to boot from the **EFI USB Device**.
    - Save the changes and exit BIOS.
-6. Once Ubuntu starts loading, follow the on-screen prompts to complete the installation.
+
+7. Once Ubuntu starts loading, follow the on-screen prompts to complete the installation.
    - You'll be prompted to set up a **user account**. Enter your **username** and **password** for the system.
-   - You will also be asked if you want to set up a graphical user interface (GUI) or proceed with a minimal, command-line only setup. Choose based on your preference.
-   - If prompted, set up your Wi-Fi by selecting your network and entering the necessary credentials.
+   - You will also be asked if you want to set up a **Graphical User Interface (GUI)** or proceed with a **command-line only** setup:
+     - **For Ubuntu Desktop**: The GUI is pre-installed, so you’ll get a full desktop environment like you would on a regular personal computer.
+     - **For Ubuntu Server**: You will install the system without a GUI, using the command line interface (CLI). If you later decide you want a GUI, you can install one (such as **GNOME**, **KDE**, or **XFCE**) using the terminal.
+
+8. If prompted, set up your Wi-Fi by selecting your network and entering the necessary credentials.
 ```
 
 
 # FIRST TIME SETUP
 
-3. ADMINS
+The following commands all the Debian (Which includes Ubuntu) distrobution commands.
+However the same principal can be applied to many other distros 
+
+1. (OPTIONAL FOR VIRTUAL BOX USERS) - CREATE ADMINS
 ```bash
 su
 usermod -aG sudo vboxuser # or wheel group
@@ -81,7 +94,7 @@ exit
 sudo reboot # necessary to reset admin cache
 ```
 
-4. UPDATE
+2. UPDATE
 ```bash
 sudo apt update
 sudo apt upgrade -y
@@ -91,17 +104,17 @@ sudo reboot
 pacman -Syu
 ```
 
-5. DRIVERS
+3. CHECK DRIVERS ALL INSTALLED
 ```bash
 dmesg # check kernel for hardware/driver errors then fix/install
 ```
 
-6. SSH
+4. ENABLE SSH
 ```bash
 sudo apt install openssh-server -y # for incomming SSH
 ```
 
-7. HARDEN
+5. HARDEN
 ```bash
 sudo apt install ufw
 sudo ufw enable
@@ -109,22 +122,22 @@ sudo ufw allow ssh
 sudo ufw status
 ```
 
-8. OPTIONAL - GUI
+6. OPTIONAL - SETUP GUI
 ```bash
 sudo apt install ubuntu-desktop # ubuntu, or for low OS spec hardware install lubuntu-desktop
 ```
 
-9. OPTIONAL - ENABLE INLINE COMMENTS
+7. OPTIONAL - ENABLE INLINE COMMENTS
 ```bash
 testusr@ubuntu Documents % setopt interactive_comments # zsh shell only
 ```
 
-10. OPTIONAL - USEFULL PACKAGES
+8. OPTIONAL - USEFULL PACKAGES
 ```bash
 sudo apt install lolcat, git, flatpak
 ```
 
-11. OPTIONAL - SETUP C/C++ COMPILER
+9. OPTIONAL - SETUP C/C++ COMPILER
 ```bash
 # 1. INSTALL USEFULL PACKAGES 
 sudo apt install -y build-essential g++ libboost-all-dev libcurl4-gnutls-dev 
@@ -137,7 +150,7 @@ gcc -o test test.c
 ./test
 ```
 
-12. CLEANUP
+10. CLEANUP
 ```bash
 sudo snap remove firefox
 ```
