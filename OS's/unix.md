@@ -9,9 +9,10 @@ Date: July 2024
 - [1. Terminologies](#terminologies)
 - [2. Requirements](#requirements)
 - [3. Installing](#installing)
-- [4. Profile script](#profile-script)
-- [5. Common Commands](#common-commands)
-- [6. Scripts](#scripts)
+- [4. First time setup](#first-time-setup)
+- [5. Profile script](#profile-script)
+- [6. Common Commands](#common-commands)
+- [7. Scripts](#scripts)
 
 # TERMINOLOGIES
 
@@ -21,16 +22,55 @@ The commands below target the Debian family e.g. Debian, Ubuntu, RaspberryPi
 however they can be modified with a quick confirmation with chatGPT to suit
 other OS.
 
+
 # INSTALLING
 
-1. INSTALLING LINUX
+Linux is a free and open-source operating system, originally based on the Unix OS. It was created by Linus Torvalds in 1991 when he released the first version of the Linux kernel. Since then, Linux has grown into a highly versatile and widely used system, with a variety of distributions (distros) available for different purposes. The term distro refers to a specific version of Linux, customized with additional software and configuration, often targeting specific user needs.
+
+Anyone can take the Linux kernel and create their own custom distro. These distros can be free, open-source, or paid. Open-source distros are typically maintained by communities and are often available on platforms like GitHub, where anyone can contribute. However, these community-driven distros may not have the resources or manpower that enterprise companies have, so they might not always have the latest hardware drivers or support for new technologies.
+
+Each Linux distro includes its own set of command-line tools and online software repositories, maintained by the community. These repositories offer software packages that can be installed either via the command line or through graphical user interfaces (GUIs). For example, package management systems like apt (Debian-based distros like Ubuntu) and yum (Red Hat-based distros like CentOS) are used to install and manage software. Both have the same purpose but differ in commands, syntax, and package formats. Apt uses .deb packages, while Yum uses .rpm. Additionally, distros like Arch Linux offer a rolling release system, which means they provide continuous updates rather than major version upgrades.
+
+Linux Kernel:
+At the core of any Linux-based operating system is the Linux kernel, which is the heart of the system that interacts with the hardware. The kernel is responsible for managing resources, memory, processes, hardware devices, and security. Without the kernel, the rest of the operating system wouldn't be able to function.
+
+Daemons:
+In Linux, a daemon is a background process that runs without direct interaction from the user. These processes manage system services like networking, printing, or system logging. Common daemons include the web server (Apache), database management systems (MySQL), or network-related processes (sshd). Daemons typically start when the system boots up and continue running until the system is shut down.
+
+Distros for Different Purposes:
+
+Kali Linux is designed for penetration testing and hacking, offering a wide array of security and forensic tools. It’s ideal for ethical hackers and security professionals looking for a ready-made, robust platform for testing vulnerabilities.
+Ubuntu is one of the most popular Linux distros for general-purpose use. It's known for being user-friendly, making it great for beginners. It’s ideal for home use, web browsing, gaming, and entertainment. Ubuntu has a large software repository and active community support, making it easy for users to find solutions to problems.
+Linux Mint is another distro that's aimed at providing a familiar user interface for those coming from Windows, making it great for people who want a smooth desktop experience with multimedia capabilities.
+Arch Linux is a more advanced distro that provides minimalism and customization, allowing users to build their system from the ground up. It's a good option for power users who prefer control over their system.
+Red Hat Enterprise Linux (RHEL) and CentOS (a free RHEL clone) are often used in enterprise environments for their stability and long-term support.
+Why Linux is Used in Business & Home Environments: Like Windows, Linux is widely used in both home and commercial environments. In the business world, distros like CentOS, Ubuntu Server, and Red Hat are deployed as servers, providing essential services such as web hosting, domain control, email servers, and network management. On the home front, distros like Ubuntu or Linux Mint are commonly used for everyday computing tasks like web browsing, entertainment, gaming, and office productivity.
+
+1. INSTALLING UBUNTU
 ```bash
-1. Connect a USB storage to host
-2. Download Ubuntu server
-3. Download UNetbootin - start - select above image - select previous usb - ok
-4. Connect USB to Hardware to install linux on - boot to BIOS e.g. CTRL-F12 - select boot options boot from EFI USB Device - save and exit
-5. Setup Wifi once in
+1. Download the **Ubuntu Server** ISO from the official website:
+   - [Ubuntu Server Download](https://ubuntu.com/download/server)
+   - You will be given the option to choose between versions. If you want a version with a **GUI**, you can choose **Ubuntu Server with Desktop Environment (e.g., Ubuntu Desktop)**. If you prefer a more minimal, command-line only setup, go with the standard **Ubuntu Server** version.
+2. Connect a USB drive to the destination computer where you want to install Ubuntu.
+3. Download and install **UNetbootin** from:
+   - [UNetbootin GitHub](https://github.com/unetbootin/unetbootin/releases)
+   Once installed:
+   - Open UNetbootin.
+   - Select the Ubuntu ISO image you downloaded in step 1.
+   - Choose your USB drive as the target.
+   - Click **OK** to begin transferring the ISO to the USB and make it bootable.
+4. Once the process is complete, safely eject the USB and insert it into the computer where you want to install Ubuntu.
+5. Boot the computer into BIOS (usually by pressing a key like **F12**, **ESC**, or **DEL** during startup).
+   - In BIOS, select the boot options and choose to boot from the **EFI USB Device**.
+   - Save the changes and exit BIOS.
+6. Once Ubuntu starts loading, follow the on-screen prompts to complete the installation.
+   - You'll be prompted to set up a **user account**. Enter your **username** and **password** for the system.
+   - You will also be asked if you want to set up a graphical user interface (GUI) or proceed with a minimal, command-line only setup. Choose based on your preference.
+   - If prompted, set up your Wi-Fi by selecting your network and entering the necessary credentials.
 ```
+
+
+# FIRST TIME SETUP
 
 3. ADMINS
 ```bash
