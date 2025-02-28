@@ -452,6 +452,25 @@ i will ask you to power off, wait a minute and if it doesn't auto restart the so
 
 All troubleshooting answers are officially found here: https://gbatemp.net/threads/basic-repair-guide-of-current-ez-flash-products.601332/
 
+White screen when booting game error - Are you playing a ROMHack? Make sure you applied the hack to the
+correct region version of the game! Test the ROM on a normal emulator first and see if the same issue appears
+https://visualboyadvance.org/download/vba-m/
+
+#### OMEGA & OMEGA DEFINITIVE EDITION BOOTLOADER RECOVERY
+
+FULL STEPS HERE: https://www.ezflash.cn/zip/recovery-en.pdf
+
+1. Download and extract Recovery Image "omega-recovery.img" - https://www.ezflash.cn/zip/recovery-en.pdf
+2. Download and install Win32 Disk Imager - https://sourceforge.net/projects/win32diskimager/
+3. Connect microSD card to the PC
+4. Choose omega-recovery.img and the microSD disk label.
+5. Click Write .
+6. Click YES if a warning window pop up.
+7. After the write process done, press OK .
+8. Put the microSD into OMEGA, and put OMEGA into game console, power up it.
+9. Select Update BOOTLOADER
+10. At error initialising SD Card remove SD card place in computer and follow original setup
+
 # GAMES TO PLAY
 
 Here is a author picked variety list of ~60 of the most popular, interesting, technically impressive, historically significant, rarest games and modded/hacked versions of
@@ -516,6 +535,17 @@ Note some of the games below are hard to track down but Japanese copies are alwa
 * Wario Land - Super Mario Land 3
 * Wario Land II
 * X
+
+
+# HACKING ROMS | ROMHACKS
+
+To hack a ROM e.g, to play fun user modifications to the original games like different colors, sounds, music, gameplay etc.,
+1. first download Lunar IPS - https://www.romhacking.net/utilities/240/
+2. On the same website or anywhere find the hack you want and download it
+3. use Lunar IPS to target the IPS romhack file on the correct region ROM and click apply IPS patch
+4. Done try the game out on a software emulator first before playing on real hardware to rule out
+any issues - https://visualboyadvance.org/download/vba-m/
+
 
 # PROGRAMMING
 

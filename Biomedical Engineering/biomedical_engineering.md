@@ -13,6 +13,9 @@ Date: January 2025
 
 # TERMINOLOGIES
 
+# COST
+
+Free
 
 # REQUIREMENTS
 
@@ -38,4 +41,8 @@ The following items and knowledge is required to successfully pass this course.
 2. Neuroscience & EEG - iMotions_EEG_Guide__2019.pdf
 3. RFID Standards - https://blog.flipper.net/rfid/
 4. Bodyhacking & Cyberware
+
+
+# SEE MORE
+Build an ECG - https://swharden.com/blog/2016-08-08-diy-ecg-with-1-op-amp/
 
