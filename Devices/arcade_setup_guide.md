@@ -573,11 +573,25 @@ Example here https://www.youtube.com/watch?v=B4P6Nuofftg
 To protect the bottom of the arcade cabinet from being damaged from repeated kicks such as in commercial settings you can
 tape or glue a metal sheet at the front following this example guide https://www.youtube.com/watch?v=Wf4RVx3Bs-o
 
-3. HACK SOFTWARE TO ADD EMULATORS | ANY GAME
-Arcade1up new cab models that have a MicroSD card slot have an Android Operating System.
-The OS cab be customised so that you can install any application manually from SD Card (Not
-from the Google Play Store as Google hasn't authorised any cab models to allow this functionality).
-follow this guide to learn more https://www.youtube.com/watch?v=m1gkwDe9c7w
+3. NEW MODELS - ADD RETROARCH / EMULATORS / ROMS
+Arcade1up new cab models that have a MicroSD card slot have an Android Operating System. Follow steps below
+
+Retroarch setup on Arcade1up xmen97/mvc2 cab.
+Note: It is an old Android version 7.x.x OS
+1. Insert a wireless keyboard/mouse combo into the arcade1up
+2. Using a MicroSD card insert into the arcade1up
+3. Press Windows + N key - navigate to settings - storage - SD card - format - done - remove
+4. Insert MicroSD card into computer
+5. Copy your ROM /bios and /roms folder onto the SD card (it should look like a android filesystem /xxx)
+6. Create a folder called /apps if not already existing, find any app that can install on Android version 5+
+7. Download this figtherdroid2p (the latest repo https://github.com/bremen79/FighterDroid2P?tab=readme-ov-file) 
+8. Insert SD card back into arcade1up - settings - apps - click to install app - it will prompt to open uptodown (a clone playstore preinstalled)
+9. Open the uptodown playstore install, nova launcher, button remapper,retroarch
+10. Open nova launcher, click to hold down and fix all the homescreens and click to hold and add all apps above + settings + file explorer (if available).
+11. start button remapper, and map long hold press of live key to go back to home.
+12. Setup Retroarch
+13. Setup fighterdroid2p (the latest version using this list - https://www.youtube.com/watch?v=oFziMSZgte0)
+14. Play your games!
 
 4. LIGHT UP COIN DOOR
 https://www.youtube.com/watch?v=lsZ99HHl2U0

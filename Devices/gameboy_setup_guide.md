@@ -115,7 +115,7 @@ When you replace the battery ensure you use a cell holder which is easier to rep
 
 ## REPAIR PAD
 
-Watch this video that demonstrates how to repair damaged pads: https://www.youtube.com/watch?v=SaBwdJLFVPU
+Watch this video that demonstrates how to repair damaged pads: https://www.youtube.com/shorts/WCOVe0QKmPU
 
 ## REPAIR CONTACT STRIP PIN
 
