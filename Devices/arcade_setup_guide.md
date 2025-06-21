@@ -590,8 +590,9 @@ Note: It is an old Android version 7.x.x OS
 10. Open nova launcher, click to hold down and fix all the homescreens and click to hold and add all apps above + settings + file explorer (if available).
 11. start button remapper, and map long hold press of live key to go back to home.
 12. Setup Retroarch
-13. Setup fighterdroid2p (the latest version using this list - https://www.youtube.com/watch?v=oFziMSZgte0)
-14. Play your games!
+13. Somehow uninstall existing figterdroid2p (its not in apps, might be in secure folder, see here: https://www.reddit.com/r/androidapps/comments/u9drlb/i_want_to_install_an_apk_but_it_shows_app_not/)
+14. Setup fighterdroid2p (the latest version using this list - https://www.youtube.com/watch?v=oFziMSZgte0)
+15. Play your games!
 
 4. LIGHT UP COIN DOOR
 https://www.youtube.com/watch?v=lsZ99HHl2U0
