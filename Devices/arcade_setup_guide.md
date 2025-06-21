@@ -378,206 +378,13 @@ e.g, https://dofreality.com/product/universal/universal-motion-platform-6-axis-h
 
 # MODIFYING ARCADE1UP MACHINES
 
-If you have an existing Arcade1up cabinet the following steps outline the ways to improve the cosmetic and functional aspects of it.
-Once the cab is built and all electronics added you can skip to the Retropie Setup steps to finally add retro game emulation on it
+Options for modding an Arcade1up if you own one, instead of building your own or buying a complete arcade machine.
 
-1. BUILD CUSTOM RISER
-
-If the height of the Arcade1UP cabinets are too short you can increase with custom risers. The steps below outline different size comparisons
-and different options depending on the generation/model of cabinets you have.
-
-Size comparisons located in this file: /Arcade/Arcade1up-size-comparisons.jpg
-
-3/4 cabs: varies (h)
-Deluxe cab: 155cm (h)
-XL cab: 165cm (h) + 3" wider
-
-Both 3/4 and Deluxe cabinets share same length and width dimensions and fit same riser
-https://www.reddit.com/r/Arcade1Up/comments/167qcsp/can_the_deluxe_cabinets_be_put_on_risers/ 
-XL cabs are also authentic but they are huge. Deluxe provide the middle ground authentic footprint arcade experience.
-
-FOR DELUXE CABINETS
-
-OPTION A - Flush riser
-
-Buy a flush riser then put metal diamond tread kickplates on all sides to prevent wear and tear
-Cons are it will cause balance instability and exhuberate the rocking issue with these top heavy tall cabs (serious consideration)
-Prepurchase: https://www.gijoelgaming.com/product/arcade1up-inline-riser
-Example: https://www.youtube.com/watch?v=wlPyo3gw3MA
-
-      +------------------------+
-      |     MORTAL KOMBAT      |
-      |                        |
-      +------------------------+
-      | +--------------------+ |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | +--------------------+ |
-      |                        |
-      |------------------------|
-      |   X O O O   X O O O    |
-      |------------------------|
-      |                        |
-      |                        |
-      |                        |
-      |       +---------+      |
-      |       |  |   |  |      |
-      |       |  _   _  |      |
-      |       | |_| |_| |      |
-      |       +---------+      |
-      |                        |
-      |                        |
-      |                        |
-      |                        |
-      |                        |
-      |                        |     
-      +------------------------+
-      |    Flush Riser (4")    |
-      |                        |
-      +------------------------+
-
-OPTION B - non flush riser
-
-Buy a no flush riser then put metal diamond tread kickplates on all sides to prevent wear and tear, base adss stability.
-Prepurchase: https://www.buystuffarcades.com/products/mini-riser-for-deluxe-arcade1up-cabs
-
-      +------------------------+
-      |     MORTAL KOMBAT      |
-      |                        |
-      +------------------------+
-      | +--------------------+ |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | +--------------------+ |
-      |                        |
-      |------------------------|
-      |   X O O O   X O O O    |
-      |------------------------|
-      |                        |
-      |                        |
-      |                        |
-      |       +---------+      |
-      |       |  |   |  |      |
-      |       |  _   _  |      |
-      |       | |_| |_| |      |
-      |       +---------+      |
-      |                        |
-      |                        |
-      |                        |
-      |                        |    
-      |                        |
-      |                        |
-     +--------------------------+
-     |   Metal Kickplate (4")   |
-     |                          |
-     +--------------------------+
-
-FOR 3/4 CABINETS
-
-As Arcade1up 3/4 cabinets are too short by 15cm (6") by personal testing and most reports 
-https://www.reddit.com/r/Arcade1Up/comments/sdjj7n/even_with_riser_arcade_games_are_not_high_enough/ we then add that to the
-custom riser measurements below to either extend the existing riser by 15cm or make a new riser for 49cm;
-
-Aracde modder example dimensions - breakdown - https://www.reddit.com/r/Arcade1Up/comments/hql8o3/riser_specs/
-4 x Outer panels 51cm (l) x 34cm (h)
-2 x Inner panels 48cm (l) x 29cm (h)
-2 x Weight bearing panels 48cm (l) x 5cm (w)
-
-OPTION A - Buy Riser extender
-
-Buy a riser extender (diamond kickplate pattern best) and use the dimensions
-
-Prepurchase: https://www.buystuffarcades.com/products/riser-booster-for-arcade1up-arcades?variant=40523236540576
-Example: https://www.youtube.com/watch?v=2bcejhZNyBA&lc=Ugzya6nEhq4Rz2VvC5F4AaABAg.A6OuP1Pj09KA6PBk7JDYHM
-
-      +------------------------+
-      |     MORTAL KOMBAT      |
-      |                        |
-      +------------------------+
-      | +--------------------+ |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | +--------------------+ |
-      |                        |
-      |------------------------|
-      |   X O O O   X O O O    |
-      |------------------------|
-      |                        |
-      |                        |
-      |                        |
-      |       +---------+      |
-      |       |  |   |  |      |
-      |       |  _   _  |      |
-      |       | |_| |_| |      |
-      |       +---------+      |
-      |                        |
-     +--------------------------+
-     |                          |
-     | Arcade1up Riser (13.25") |      
-     |                          |
-     |                          |     
-     +--------------------------+
-     |     Custom Riser (4")    |
-     |                          |
-     +--------------------------+
-
-OPTION B: Build custom riser
-
-Example here https://www.youtube.com/watch?v=B4P6Nuofftg
-
-      +------------------------+
-      |     MORTAL KOMBAT      |
-      |                        |
-      +------------------------+
-      | +--------------------+ |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | |                    | |
-      | +--------------------+ |
-      |                        |
-      |------------------------|
-      |   X O O O   X O O O    |
-      |------------------------|
-      |                        |
-      |                        |
-      |                        |
-      |       +---------+      |
-      |       |  |   |  |      |
-      |       |  _   _  |      |
-      |       | |_| |_| |      |
-      |       +---------+      |
-      |                        |
-     +--------------------------+
-     |                          |
-     |   Custom Riser (13.25")  |      
-     |                          |
-     |                          |     
-     +--------------------------+
-
-2. ADD DIAMOND TREAD KICKPLATE
+1. ADD DIAMOND TREAD KICKPLATE
 To protect the bottom of the arcade cabinet from being damaged from repeated kicks such as in commercial settings you can
 tape or glue a metal sheet at the front following this example guide https://www.youtube.com/watch?v=Wf4RVx3Bs-o
 
-3. NEW MODELS - ADD RETROARCH / EMULATORS / ROMS
-Arcade1up new cab models that have a MicroSD card slot have an Android Operating System. Follow steps below
-
-Retroarch setup on Arcade1up xmen97/mvc2 cab.
-Note: It is an old Android version 7.x.x OS
+2. RETROARCH SETUP - (applies to cabs with Android version 7.x.x in specific anything past xmen97/mvc2 cab)
 1. Insert a wireless keyboard/mouse combo into the arcade1up
 2. Using a MicroSD card insert into the arcade1up
 3. Press Windows + N key - navigate to settings - storage - SD card - format - done - remove
@@ -589,20 +396,27 @@ Note: It is an old Android version 7.x.x OS
 9. Open the uptodown playstore install, nova launcher, button remapper,retroarch
 10. Open nova launcher, click to hold down and fix all the homescreens and click to hold and add all apps above + settings + file explorer (if available).
 11. start button remapper, and map long hold press of live key to go back to home.
-12. Setup Retroarch
 13. Somehow uninstall existing figterdroid2p (its not in apps, might be in secure folder, see here: https://www.reddit.com/r/androidapps/comments/u9drlb/i_want_to_install_an_apk_but_it_shows_app_not/)
 14. Setup fighterdroid2p (the latest version using this list - https://www.youtube.com/watch?v=oFziMSZgte0)
-15. Play your games!
+15. You may find you wont be able to navigate Retroarch with the Arcade stick and buttons, in this case, connect a USB-C + PS5/XBOX controller
+into the USB slot and use it to navigate Retroarch menu, and using the arcade buttons to confirm. It's a bit tricky but the objective is to
+get to inputs - controls for retrobind/player 1 and set it up (map it) to the Arcade joystick and buttons.
+16. Do the same for player 2
+17. From settings - directories - BIOS directories - point to the MicroSD card /bios folder
+18. Import your games using Manual scan option pointing to previous MicroSD card /roms folder
+19. Install cores. For MAME use the latest MAME (Arcade). This core will always use the latest ROM set.
+20. Test the games work.
 
-4. LIGHT UP COIN DOOR
+3. MOLDED COIN DOOR - LIGHT UP MOD
 https://www.youtube.com/watch?v=lsZ99HHl2U0
 
-5. ADD REAL COIN DOOR
+4. ADD REAL COIN DOOR
 First purchase an "2.8mm Terminal Quick Connects split arcade cables" then follow this guide https://www.youtube.com/watch?v=kSyySSv1ywQ
 
-6. ADD CUSTOM LIT MARQUEE
+5. FIX LOUD SPEAKER
+Buy an inline 3.5mm headphone control, if you find the Arcade1up stock speaker sound is too loud and place it between the speaker and board.
 
-7. FIX LOW LEVEL SPEAKER STATIC
+6. FIX LOW LEVEL SPEAKER STATIC
 The static can be fixed, I bought a better quality 12v power supply off Amazon and a TRRS Male to Female Stereo Audio Jack Extender 
 Aux Extension Adapter Cords with Volume Control. Its a pain that they have the gain too high off the PCB and a noisy power supply, 
 this way I can turn the gain down manually and it lowers the noise floor. The other fix is the reroute the headphone jack which is 
@@ -610,15 +424,15 @@ line level out and connect the speakers to that but I wanted to be able to still
 have not fixed an annoying problem that has a relatively cheap fix. - Youtube commenter @user-pi6cs3ue4s 
 August 2024 https://www.youtube.com/watch?v=alf4X3mJsHQ
 
-8. ADD LINK CABLE FOR MULTIPLAYER
+7. ADD LINK CABLE FOR MULTIPLAYER
 https://www.buystuffarcades.com/products/ridge-racer-and-outrun-mod-kit
 
-9. REPLACE JOYSTICK BUTTONS
+8. REPLACE JOYSTICK BUTTONS
 You can choose to replace the stock cheap Arcade1up buttons on the non XL models with better products. You will need to buy
 Sanwa style arcade buttons
 1. Follow this to replace buttons - https://www.youtube.com/watch?v=09DQCOr6zQM
 
-10. ADD BIGGER SCREEN
+9. ADD BIGGER SCREEN
 To add a different size monitor or TV to an existing Arcade1up cabinet such as increasing the screen size for shooter games
 you need the below;
 1 x Geekworm HDMI to LDVS 20 (a.k.a 2.0) adapter - https://geekworm.com/products/lvds-to-hdmi-adapter-board-converter-with-lvds-cable
@@ -632,7 +446,7 @@ Optionally, Seperate the board from the LCD with cardboard and double sided tape
 b. add HDMI cable to LDVS and TV and turn on game and test. If flickering/drop outs occour then test with Channel 2 position
 d. Once desired position is kept add the Wood/VEGA frame to Arcade cabinet and TV and connect all back together and test
 
-11. COMPLETE BUILD GUIDE - RASPBERRY PI + SPEAKERS + BUTTONS
+10. COMPLETE BUILD GUIDE - RASPBERRY PI + SPEAKERS + BUTTONS
 https://www.youtube.com/watch?v=09DQCOr6zQM
 
 
