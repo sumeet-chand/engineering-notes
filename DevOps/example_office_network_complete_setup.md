@@ -98,6 +98,8 @@ to add as network drives/browse as UNC paths etc.,
  * run below to disable legacy protocols
  * run: Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
  * run: Set-SmbServerConfiguration -EncryptData $true -Force
+ * enable pinging within network (not externally) on all devices (run as GPO startup script):
+  netsh advfirewall firewall add rule name="Allow Internal Ping" dir=in action=allow protocol=icmpv4:8,any remoteip=10.0.0.0/24,192.168.1.0/24
 
 
 # ENTRA SSO Example
