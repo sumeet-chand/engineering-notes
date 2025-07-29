@@ -6,7 +6,8 @@ and apps and how they are all setup.
 # ADFS SSO Summary
 1. Create Domain 
   * DC1: Primary Domain Controller (on-prem AD)
-     * Install core roles (AD, DNS, DHCP): Install-WindowsFeature AD-Domain-Services, DNS, DHCP -IncludeManagementTools
+     * Install core roles (AD, DNS, DHCP): Install-WindowsFeature AD-Domain-Services, DNS, DHCP, LAPS -IncludeManagementTools
+     * Set-AdmPwdPasswordResetPolicy -OrgUnit "OU=Servers,DC=bobsbuilders,DC=local" (this step for LAPS)
      * Promote to DC (creates forest): Install-ADDSForest -DomainName "bobsbuilders.local" -InstallDNS -NoRebootOnCompletion
         * Open ports for Core AD/DNS/DHCP Ports
           * Port	Protocol	Purpose	Direction
@@ -20,7 +21,7 @@ and apps and how they are all setup.
           * 3269	TCP	Global Catalog (LDAPS)	Inbound/Outbound
      * Create AD users, add roles e.g, Remote desktop users, administrators
   * DC2 (Replica DC + AD CS)
-     * Install core roles + AD CS (PKI): Install-WindowsFeature AD-Domain-Services, DNS, AD-Certificate -IncludeManagementTools
+     * Install core roles + AD CS (PKI): Install-WindowsFeature AD-Domain-Services, DHCP, DNS, LAPS, AD-Certificate -IncludeManagementTools
      * Promote as replica DC: Install-ADDSDomainController -DomainName "bobsbuilders.local" -InstallDNS -NoRebootOnCompletion
      * Configure AD CS (after reboot): Install-AdcsCertificationAuthority -CAType EnterpriseRootCA -ValidityPeriod Years 5 -CryptoProviderName "RSA#Microsoft Software Key Storage Provider" -KeyLength 2048
      * Open extra ports for AD CS
@@ -78,6 +79,12 @@ to add as network drives/browse as UNC paths etc.,
   * Bob enters bob@bobsbuilders.com on Facebook → Redirected to ADFS.
   * ADFS validates against on-prem AD → Issues SAML token.
 9. Auth Success: Facebook receives token → Logs Bob in.
+10. Optional
+ * Setup Monitoring software
+ * Setup RMM software
+ * run below to disable legacy protocols
+ * run: Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
+ * run: Set-SmbServerConfiguration -EncryptData $true -Force
 
 
 # ENTRA SSO Example
