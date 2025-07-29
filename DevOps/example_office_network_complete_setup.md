@@ -41,6 +41,10 @@ and apps and how they are all setup.
           * 80	TCP	HTTP (Redirects to HTTPS)	Inbound (Public)
           * 443	TCP	HTTPS (SAML/WS-Federation endpoints)	Inbound (Public)
           * 49443	TCP	ADFS Admin Service (optional)	Inbound (Internal)
+  * Enforce MFA for external logins: # On ADFS server:
+  Set-AdfsGlobalAuthenticationPolicy -AdditionalAuthenticationProvider "AzureMfa" -ClientAuthenticationMethods "Primary, Secondary"
+ * IP based restrictions: # Block non-VPN IPs:
+  New-AdfsClaimsProviderTrust -Name "VPN_Users" -Identifier "urn:vpn:users" -AllowedAuthenticationTypes "All"
 4. (optional For internal apps) 
  * Create IIS server e.g. WEBSERVER01 - add IIS ROLE
  * Create app and deploy it e.g, MyArchitectureProgram (point IIS to Router Static Public IP, then configure in Domain        register A record to point to it)
@@ -70,6 +74,15 @@ and apps and how they are all setup.
  * Setup a NAS or Backup server and put all the backups there.
  * Enable group policy for NTFS permission access to lock down files/folders
  * To check open shares - Computer management - Shares - all the shared drives will be listed
+  * Define recovery methods
+  - RTO (Recovery Time Objective):  
+  - AD/ADFS: 1 hour  
+  - File Shares: 4 hours  
+- RPO (Recovery Point Objective):  
+  - Critical Data: 15-minute snapshots  
+  - Non-Critical: 24 hours  
+  * test backups quarterly
+  * Simulate AD restore: Start-VBRRestoreVM -Backup (Get-VBRBackup -Name "DC1") -ServerName "DR_LAB01" -RunAsync
 to add as network drives/browse as UNC paths etc.,
 7. (optional for online apps) - Facebook Business SSO Config:
   * Uploaded your ADFS metadata XML or manually entered:
