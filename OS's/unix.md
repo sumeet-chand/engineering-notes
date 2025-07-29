@@ -422,7 +422,7 @@ echo '#!/bin/zsh' > test.sh && echo 'figlet HELLO WORLD | lolcat' >> test.sh
 # NOTE: chmod stands for Change Mode
 chmod a+rwx test.sh # a = anyone, rwx = can read write execute
 
-# you can use a (anyone), g (group), u (user), or o )others∂
+# you can use a (anyone), g (group), u (user), or o (others)
 
 # you can also target the current user without specifying a specific user
 chmod +rwx
@@ -486,7 +486,7 @@ sumeetsingh@Sumeets-Air-2 sandbox % du -hc -d 1
 COPY FILES
 ```bash
 
-# rsync VS cpp
+# rsync VS cp
 
 # rsync only overwrites the existing destination file if they are different (sizes, types, etc.,) however with --ignore-existing it wont
 # rsync can be resumed
