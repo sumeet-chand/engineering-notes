@@ -2,20 +2,31 @@
 
 
 # ADFS SSO Summary
-1. DC1: Primary Domain Controller (on-prem AD).
-2. DC2: Replica DC for redundancy.
+1. Create Domain 
+  * DC1: Primary Domain Controller (on-prem AD)
+     * Install core roles (AD, DNS, DHCP): Install-WindowsFeature AD-Domain-Services, DNS, DHCP -IncludeManagementTools
+     * Promote to DC (creates forest): Install-ADDSForest -DomainName "bobsbuilders.local" -InstallDNS -NoRebootOnCompletion
+  * DC2 (Replica DC + AD CS)
+     * Install core roles + AD CS (PKI): Install-WindowsFeature AD-Domain-Services, DNS, AD-Certificate -IncludeManagementTools
+     * Promote as replica DC: Install-ADDSDomainController -DomainName "bobsbuilders.local" -InstallDNS -NoRebootOnCompletion
+     * Configure AD CS (after reboot): Install-AdcsCertificationAuthority -CAType EnterpriseRootCA -ValidityPeriod Years 5 -CryptoProviderName "RSA#Microsoft Software Key Storage Provider" -KeyLength 2048
+2. Setup Certs
+  * Issue SSL Cert for Internal Apps: Open certsrv.msc on DC2 → Right-click Certificate Templates → Duplicate Web Server template. Name: InternalWebSSL → Enable Client Authentication + Server Authentication. Right-click Certificates → Request New Certificate → Choose InternalWebSSL. Subject Name: MyArchitectureProgram.bobsbuilders.local.
+  * Trust the CA on All Devices: Export root cert from certsrv.msc (Right-click CA → Properties → View Certificate → Export as .cer). Use Group Policy to Install cert in Trusted Root Certification Authorities on all company PCs.
 3. ADFS Server:
-  * Separate Windows Server with IIS hosting the login page (https://sts.bobsbuilders.com/adfs/ls).
+  * Separate Windows Server with ADFS + IIS roles and hosting the login page (https://sts.bobsbuilders.com/adfs/ls).
   * Public SSL cert (e.g., DigiCert, Let’s Encrypt).
   * DNS A record: sts.bobsbuilders.com → ADFS server’s IP.
-4. Facebook Business SSO Config:
+4. (optional For internal apps) (e.g., MyArchitectureProgram on IIS WEBSERVER01) Bob logs into his domain-joined PC → Gets Kerberos TGT from AD.
+ADFS uses this ticket for SSO to other on-prem apps (no password prompts).
+6. (optional for online apps) - Facebook Business SSO Config:
   * Uploaded your ADFS metadata XML or manually entered:
   * SAML Endpoint: https://sts.bobsbuilders.com/adfs/ls
   * Public Cert: From ADFS.
-5. User Flow:
+7. User Flow:
   * Bob enters bob@bobsbuilders.com on Facebook → Redirected to ADFS.
   * ADFS validates against on-prem AD → Issues SAML token.
-6. Auth Success: Facebook receives token → Logs Bob in.
+8. Auth Success: Facebook receives token → Logs Bob in.
 
 
 # ENTRA SSO Example
