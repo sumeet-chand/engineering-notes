@@ -64,7 +64,7 @@ and apps and how they are all setup.
   * Enable geoblocking e.g. North Korea
 6. Create File Shares and backups
  * Enable VHDX Volume-Level (Full volume backup of d:\ data drives in Fileservers e..g FS01)
- * Enable WSB File/Folder-Level (Targeted backup).
+ * Use a free backup software e.g. Veeam to create immutable backups (backups that can't be altered)
  * Enable Shadow Copies ("Previous Versions") (Short-term snapshots, uses VSS).
  * Use a free software e.g, Veeam to create ISO backups of all servers
  * Setup a NAS or Backup server and put all the backups there.
