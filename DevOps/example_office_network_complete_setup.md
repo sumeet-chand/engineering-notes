@@ -5,25 +5,34 @@ and apps and how they are all setup.
 
 # ADFS SSO Summary
 1. Create Domain 
-  * DC1: Primary Domain Controller (on-prem AD)
-     * Install core roles (AD, DNS, DHCP): Install-WindowsFeature AD-Domain-Services, DNS, DHCP, LAPS -IncludeManagementTools
-     * Set-AdmPwdPasswordResetPolicy -OrgUnit "OU=Servers,DC=bobsbuilders,DC=local" (this step for LAPS)
-     * Promote to DC (creates forest): Install-ADDSForest -DomainName "bobsbuilders.local" -InstallDNS -NoRebootOnCompletion
-        * Open ports for Core AD/DNS/DHCP Ports
-          * Port	Protocol	Purpose	Direction
-          * 53	TCP/UDP	DNS Resolution	Inbound/Outbound
-          * 88	TCP/UDP	Kerberos Authentication	Inbound/Outbound
-          * 135	TCP	RPC (Remote Procedure Call)	Inbound/Outbound
-          * 389	TCP/UDP	LDAP (Active Directory queries)	Inbound/Outbound
-          * 445	TCP	SMB (File/Printer sharing, GPOs)	Inbound/Outbound
-          * 636	TCP	LDAPS (Secure LDAP)	Inbound/Outbound
-          * 3268	TCP	Global Catalog (LDAP)	Inbound/Outbound
-          * 3269	TCP	Global Catalog (LDAPS)	Inbound/Outbound
+  * DC1: Primary Domain Controller (on-prem AD) 
+  ```powershell 
+  # Install core roles (AD, DNS, DHCP):
+  Install-WindowsFeature AD-Domain-Services, DNS, DHCP, LAPS -IncludeManagementTools
+  # Enable LAPS
+  Set-AdmPwdPasswordResetPolicy -OrgUnit "OU=Servers,DC=bobsbuilders,DC=local"
+  ```
+  * Promote to DC (creates forest): Install-ADDSForest -DomainName "bobsbuilders.local" -InstallDNS -NoRebootOnCompletion
+      * Open ports for Core AD/DNS/DHCP Ports
+      * Port	Protocol	Purpose	Direction
+      * 53	TCP/UDP	DNS Resolution	Inbound/Outbound
+      * 88	TCP/UDP	Kerberos Authentication	Inbound/Outbound
+      * 135	TCP	RPC (Remote Procedure Call)	Inbound/Outbound
+      * 389	TCP/UDP	LDAP (Active Directory queries)	Inbound/Outbound
+      * 445	TCP	SMB (File/Printer sharing, GPOs)	Inbound/Outbound
+      * 636	TCP	LDAPS (Secure LDAP)	Inbound/Outbound
+      * 3268	TCP	Global Catalog (LDAP)	Inbound/Outbound
+      * 3269	TCP	Global Catalog (LDAPS)	Inbound/Outbound
      * Create AD users, add roles e.g, Remote desktop users, administrators
   * DC2 (Replica DC + AD CS)
-     * Install core roles + AD CS (PKI): Install-WindowsFeature AD-Domain-Services, DHCP, DNS, LAPS, AD-Certificate -IncludeManagementTools
-     * Promote as replica DC: Install-ADDSDomainController -DomainName "bobsbuilders.local" -InstallDNS -NoRebootOnCompletion
-     * Configure AD CS (after reboot): Install-AdcsCertificationAuthority -CAType EnterpriseRootCA -ValidityPeriod Years 5 -CryptoProviderName "RSA#Microsoft Software Key Storage Provider" -KeyLength 2048
+     * Install core roles + AD CS (PKI): 
+     ```powershell 
+     Install-WindowsFeature AD-Domain-Services, DHCP, DNS, LAPS, AD-Certificate -IncludeManagementTools
+     # * Promote as replica DC: 
+     Install-ADDSDomainController -DomainName "bobsbuilders.local" -InstallDNS -NoRebootOnCompletion
+     # Configure AD CS (after reboot)
+     Install-AdcsCertificationAuthority -CAType EnterpriseRootCA -ValidityPeriod Years 5 -CryptoProviderName "RSA#Microsoft Software Key Storage Provider" -KeyLength 2048
+     ```
      * Open extra ports for AD CS
           * Port	Protocol	Purpose	Direction
           * 443	TCP	HTTP Enrollment (PKI web services)	Inbound (if web enrollment enabled)
@@ -41,10 +50,13 @@ and apps and how they are all setup.
           * 80	TCP	HTTP (Redirects to HTTPS)	Inbound (Public)
           * 443	TCP	HTTPS (SAML/WS-Federation endpoints)	Inbound (Public)
           * 49443	TCP	ADFS Admin Service (optional)	Inbound (Internal)
-  * Enforce MFA for external logins: # On ADFS server:
-  Set-AdfsGlobalAuthenticationPolicy -AdditionalAuthenticationProvider "AzureMfa" -ClientAuthenticationMethods "Primary, Secondary"
- * IP based restrictions: # Block non-VPN IPs:
-  New-AdfsClaimsProviderTrust -Name "VPN_Users" -Identifier "urn:vpn:users" -AllowedAuthenticationTypes "All"
+  * 
+    ```powershell
+    # Enforce MFA for external logins: 
+    Set-AdfsGlobalAuthenticationPolicy -AdditionalAuthenticationProvider "AzureMfa" -ClientAuthenticationMethods "Primary, Secondary"
+    # IP-based restrictions:
+    New-AdfsClaimsProviderTrust -Name "VPN_Users" -Identifier "urn:vpn:users" -AllowedAuthenticationTypes "All"
+    ```
 4. (optional For internal apps) 
  * Create IIS server e.g. WEBSERVER01 - add IIS ROLE
  * Create app and deploy it e.g, MyArchitectureProgram (point IIS to Router Static Public IP, then configure in Domain        register A record to point to it)
@@ -99,7 +111,9 @@ to add as network drives/browse as UNC paths etc.,
  * run: Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
  * run: Set-SmbServerConfiguration -EncryptData $true -Force
  * enable pinging within network (not externally) on all devices (run as GPO startup script):
+  ```powershell 
   netsh advfirewall firewall add rule name="Allow Internal Ping" dir=in action=allow protocol=icmpv4:8,any remoteip=10.0.0.0/24,192.168.1.0/24
+  ```
 
 
 # ENTRA SSO Example
