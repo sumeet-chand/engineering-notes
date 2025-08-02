@@ -124,7 +124,7 @@ gcc -o test test.c
 $ Hello World! # expected output
 ```
 
-4. Add environmental variable for g++ location C:\msys64\mingw64\bin (run below as admin in terminal or add manually)
+4. Using PowerShell run the below command to add the environmental variable for g++ compiler location here C:\msys64\mingw64\bin.
 ```powershell
 [System.Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\msys64\mingw64\bin", [System.EnvironmentVariableTarget]::Machine)
 ```
