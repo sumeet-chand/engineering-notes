@@ -490,12 +490,12 @@ npm install -g create-react-app
 3. CREATE REACT WEBSITE TEMPLATE
 will initialise git, create .gitignore configured to ignore node_modules. Ready to commit
 ```bash
-create-react-app sumeet-singh.com
+create-react-app sumeet.com
 ```
 
 4. MOVE INTO PROJECT
 ```bash
-cd sumeet-singh.com
+cd sumeet.com
 ```
 
 5. INSTALL LIBS IN ./NODE_MODULES
