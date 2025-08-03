@@ -128,7 +128,7 @@ Now create another record
 ```
 You should have the following records
 Recrord - URL - value
-A - sumeet.singh.com - d3hvilctvbbd7e.cloudfront.net
+A - sumeet.com - d3hvilctvbbd7e.cloudfront.net
 CNAME - www.sumeet.com - d3hvilctvbbd7e.cloudfront.net
 
 10. Now test website from both URL's
