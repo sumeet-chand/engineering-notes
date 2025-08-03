@@ -2,7 +2,7 @@
 
 # HARDENING AND ENCRYPTION
 
-By: Sumeet Singh @ sumeet-singh.com
+By: Sumeet Singh
 
 Date: FEBRUARY 2025
 

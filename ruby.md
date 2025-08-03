@@ -1,8 +1,7 @@
 
 # PROGRAMMING WITH RUBY
 
-By: Sumeet Singh @ sumeet-singh.com
-
+By: Sumeet Singh
 Date: July 2024
 
 # TABLE OF CONTENTS

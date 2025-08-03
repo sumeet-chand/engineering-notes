@@ -1,7 +1,7 @@
 
 # CRYPTOGRAPHY
 
-By: Sumeet Singh @ sumeet-singh.com
+By: Sumeet Singh
 
 Date: October 2024
 
