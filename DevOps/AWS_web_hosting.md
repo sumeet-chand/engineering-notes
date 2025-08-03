@@ -6,7 +6,7 @@ ___________________________________________________________________________
 1. Buy a domain name in AWS Route 53
 URL: https://us-east-1.console.aws.amazon.com/route53/domains/home
 ```bash
-sumeet-singh.com
+sumeet.com
 ```
 
 2. Choose a region for your website
@@ -20,8 +20,8 @@ URL: https://us-east-1.console.aws.amazon.com/acm/home?region=us-east-1#/certifi
 ```bash
 1. Request certificate
 2. Amazon issued public SSL certificate
-3. Enter FQDN e.g, sumeet-singh.com
-Click add another domain name and enter the www version e.g. www.sumeet-singh.com
+3. Enter FQDN e.g, sumeet.com
+Click add another domain name and enter the www version e.g. www.sumeet.com
 4. Default DNS validation
 5. Default Key Algorithm RSA 2048
 6. Go to list certificates and click on the new certificate
@@ -67,7 +67,7 @@ URL: https://ap-southeast-2.console.aws.amazon.com/s3/home?region=ap-southeast-2
 ```bash
 1. Click Create bucket
 2. Add values below
-Bucket name = sumeet-singh.com
+Bucket name = sumeet.com
 Block Public access settings for this bucket - Uncheck
 Check warning confirmation bucket will be public
 In bucket policy enter code below
@@ -80,12 +80,12 @@ In bucket policy enter code below
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::sumeet-singh.com/*"
+            "Resource": "arn:aws:s3:::sumeet.com/*"
         }
     ]
 }
 Then click create bucket
-3. Click on bucket https://ap-southeast-2.console.aws.amazon.com/s3/buckets/sumeet-singh.com?region=ap-southeast-2&bucketType=general&tab=objects 
+3. Click on bucket https://ap-southeast-2.console.aws.amazon.com/s3/buckets/sumeet.com?region=ap-southeast-2&bucketType=general&tab=objects 
 4. Under properties scroll down to Static website hosting - click edit - enable
 index document index.html
 5. Set error page to: index.html
@@ -98,11 +98,11 @@ URL: https://us-east-1.console.aws.amazon.com/cloudfront
 IMPORTANT: only AWS Certificate's made in us-east-1 can be used
 ```bash
 1. Create distribution
-2. In choose origin domain select the new bucket sumeet-singh.com.s3 - then click use website endpoint - then repeat until confirmed
-3. Add alternate domain name: sumeet-singh.com, and the www record www.sumeet-singh.com
+2. In choose origin domain select the new bucket sumeet.com.s3 - then click use website endpoint - then repeat until confirmed
+3. Add alternate domain name: sumeet.com, and the www record www.sumeet.com
 4. Allowed HTTP methods = The last option GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE - which will allow API usage
 5. For cost saving method select Do not enable AWS WAF
-6. In Custom SSL certificate select your cert e.g, sumeet-singh.com 
+6. In Custom SSL certificate select your cert e.g, sumeet.com 
 7. Click create distribution
 8. Make note of the Distrbution domain name e.g, https://d3hvilctvbbd7e.cloudfront.net
 9. Click on "error pages" tab - click "create custom error message" - set to 404 - set custom error - seto to 404 - set to /index.html
@@ -129,11 +129,11 @@ Now create another record
 You should have the following records
 Recrord - URL - value
 A - sumeet.singh.com - d3hvilctvbbd7e.cloudfront.net
-CNAME - www.sumeet-singh.com - d3hvilctvbbd7e.cloudfront.net
+CNAME - www.sumeet.com - d3hvilctvbbd7e.cloudfront.net
 
 10. Now test website from both URL's
-sumeet-singh.com
-www.sumeet-singh.com
+sumeet.com
+www.sumeet.com
 If any failures diagnose with mxtoolbox.com by searching the relevant error domain and fixing errors
 
 
@@ -163,7 +163,7 @@ CloudFrontFullAccess
 the 2 keys as secret repository variables in order to push the code using CI/CD directly
 to the bucket.
 
-Go here: https://github.com/SumeetSinghJi/sumeet-singh.com/settings/secrets/actions
+Go here: https://github.com/SumeetSinghJi/sumeet.com/settings/secrets/actions
 
 a. Click "New repository secret"
 b. make key with name: AWS_ACCESS_KEY_ID and value: the_keys_value
