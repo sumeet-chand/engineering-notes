@@ -78,7 +78,16 @@ and apps and how they are all setup.
   * Block public access to WinRM (5985/5986), RDP (3389), and 49443 from WAN
   * Enable logging (if not done already)
   * Enable geoblocking e.g. North Korea
-6. Create File Shares and backups
+6. Setup WiFi and RADIUS
+  * installing "Windows Network Server Policy (NPS)" role on a Windows server.
+  * Register NPS in AD in DC01/02
+  * Configure in RADIUS server the WAP IP's and shared secrets
+  * Create SSID's
+  * Buy WAPS, configure with WPA2/3-Enterprise
+  * Add the previous secret
+  * Enable PEAP in NPS server
+  * Test on a laptop onsite you can login to WiFi with AD details
+7. Create File Shares and backups
  * Enable VHDX Volume-Level (Full volume backup of d:\ data drives in Fileservers e..g FS01)
  * Use a free backup software e.g. Veeam to create immutable backups (backups that can't be altered)
  * Enable Shadow Copies ("Previous Versions") (Short-term snapshots, uses VSS).
@@ -96,15 +105,15 @@ and apps and how they are all setup.
   * test backups quarterly
   * Simulate AD restore: Start-VBRRestoreVM -Backup (Get-VBRBackup -Name "DC1") -ServerName "DR_LAB01" -RunAsync
 to add as network drives/browse as UNC paths etc.,
-7. (optional for online apps) - Facebook Business SSO Config:
+8. (optional for online apps) - Facebook Business SSO Config:
   * Uploaded your ADFS metadata XML or manually entered:
   * SAML Endpoint: https://sts.bobsbuilders.com/adfs/ls
   * Public Cert: From ADFS.
-8. User Flow:
+9. User Flow:
   * Bob enters bob@bobsbuilders.com on Facebook → Redirected to ADFS.
   * ADFS validates against on-prem AD → Issues SAML token.
-9. Auth Success: Facebook receives token → Logs Bob in.
-10. Optional
+10. Auth Success: Facebook receives token → Logs Bob in.
+11. Optional
  * Setup Monitoring software
  * Setup RMM software
  * run below to disable legacy protocols
