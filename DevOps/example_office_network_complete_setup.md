@@ -95,7 +95,7 @@ and apps and how they are all setup.
  * Setup a NAS or Backup server and put all the backups there.
  * Enable group policy for NTFS permission access to lock down files/folders
  * To check open shares - Computer management - Shares - all the shared drives will be listed
-  * Document recovery methods and test regularily
+  * Document recovery methods and test regularly
   - RTO (Recovery Time Objective):  
   - AD/ADFS: 1 hour  
   - File Shares: 4 hours  

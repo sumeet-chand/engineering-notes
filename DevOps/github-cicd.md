@@ -74,7 +74,7 @@ jobs:
         with:
           args: --delete
         env:
-          AWS_S3_BUCKET: sumeet-singh.com
+          AWS_S3_BUCKET: sumeetchand.com.com
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: us-east-1
@@ -155,7 +155,7 @@ jobs:
         with:
           args: --delete
         env:
-          AWS_S3_BUCKET: sumeet-singh.com
+          AWS_S3_BUCKET: sumeetchand.com.com
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: us-east-1
@@ -1073,7 +1073,7 @@ jobs:
         with:
           args: --delete
         env:
-          AWS_S3_BUCKET: sumeet-singh.com
+          AWS_S3_BUCKET: sumeetchand.com.com
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: us-east-1
